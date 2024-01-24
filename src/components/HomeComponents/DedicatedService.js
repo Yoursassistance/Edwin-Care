@@ -1,7 +1,7 @@
 import React from "react";
 import hSupport from "../../../public/Assets/Images/hSupport.png";
 import sPart from "../../../public/Assets/Images/sPart.png";
-// import ySupport from "../../../public/Assets/Images/ySupport.png";
+import ySupport from "../../../public/Assets/Images/ySupport.png";
 import Image from "next/image";
 
 const DedicatedService = () => {
@@ -36,7 +36,7 @@ const DedicatedService = () => {
             </div>
           </div>
           <div className="w-[30%]">
-            {/* <Image src={ySupport} /> */}
+            <Image src={ySupport} />
             <div className="bg-[#FDE101] py-[1%] rounded-[10px] w-[10%] ml-[1.5%] flex flex-col justify-start items-center mt-[-3%] absolute">
               <h1 className="text-[18px] font-bold">Youth</h1>
               <h1 className="text-[28px] font-bold">Support</h1>
