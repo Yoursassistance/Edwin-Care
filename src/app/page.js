@@ -1,7 +1,7 @@
 import Header from "@/components/HomeComponents/Header";
 import HomeTop from "@/components/HomeComponents/HomeTop";
 import React from "react";
-import heroImg from "../../public/Assets/Images/heroImg.png";
+// import heroImg from "../../public/Assets/Images/heroImg.png";
 import Image from "next/image";
 import shield from "../../public/Assets/Svg/shield.svg";
 import humanLove from "../../public/Assets/Svg/humanLove.svg";
