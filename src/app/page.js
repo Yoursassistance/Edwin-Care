@@ -1,7 +1,7 @@
 import Header from "@/components/HomeComponents/Header";
 import HomeTop from "@/components/HomeComponents/HomeTop";
 import React from "react";
-// import heroImg from "../../public/Assets/Images/heroImg.png";
+import heroImg from "../../public/Assets/Images/hero.png";
 import Image from "next/image";
 import shield from "../../public/Assets/Svg/shield.svg";
 import humanLove from "../../public/Assets/Svg/humanLove.svg";
@@ -34,7 +34,7 @@ const page = () => {
               <p className="font-[600]">active participant</p>
             </div>
           </div>
-          {/* <Image src={heroImg} width="100%" className="mt-[6%]" /> */}
+          <Image src={heroImg} width="100%" className="mt-[6%]" />
         </div>
       </div>
       <DedicatedService />
