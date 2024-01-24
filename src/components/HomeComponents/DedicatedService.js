@@ -1,7 +1,7 @@
 import React from "react";
 import hSupport from "../../../public/Assets/Images/hSupport.png";
 import sPart from "../../../public/Assets/Images/sPart.png";
-import ySupport from "../../../public/Assets/Images/ySupport.png";
+import ySupport from "../../../public/Assets/Images/y.png";
 import Image from "next/image";
 
 const DedicatedService = () => {
