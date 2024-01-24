@@ -18,23 +18,23 @@ const page = () => {
         <HomeTop />
         <Header />
         <div className="px-[13%]">
-          <div className="ml-[50%] mt-[4%] mb-[-9%] flex justify-start items-start">
-            <Image src={shield} width="120%" className="mt-[1%]" />
+          <div className="ml-[50%] mt-[6%] mb-[-11%] flex justify-start items-start">
+            <Image src={shield} width="120%" className="mt-[3px]" />
             <div>
-              <h1 className="text-[1.5em] font-bold text-[#6A00C6] ">
+              <h1 className="text-[1.2em] font-bold text-[#6A00C6] ">
                 Registered NDIS provider
               </h1>
               <p className="text-[18px]">Click to view</p>
             </div>
           </div>
-          <div className="bg-white p-[1%] w-[12%] mb-[-2%] mt-[9%] ml-[-5%] flex absolute shadow-lg">
+          <div className="bg-white p-[1%] w-[12%] mb-[-2%] mt-[11%] ml-[-5%] flex absolute shadow-lg">
             <Image src={humanLove} width="10%" className="mr-[5%]" />
             <div className="w-fit">
               <h1 className="font-[600]">More than 500+</h1>
               <p className="font-[600]">active participant</p>
             </div>
           </div>
-          <Image src={heroImg} width="100%" className="mt-[4%]" />
+          <Image src={heroImg} width="100%" className="mt-[6%]" />
         </div>
       </div>
       <DedicatedService />
