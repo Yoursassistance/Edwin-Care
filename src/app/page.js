@@ -34,7 +34,7 @@ const page = () => {
               <p className="font-[600]">active participant</p>
             </div>
           </div>
-          <Image src={heroImg} width="100%" className="mt-[6%]" />
+          {/* <Image src={heroImg} width="100%" className="mt-[6%]" /> */}
         </div>
       </div>
       <DedicatedService />

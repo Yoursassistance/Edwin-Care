@@ -22,7 +22,7 @@ const DedicatedService = () => {
 
         <div className="flex justify-between mt-[5%] pb-[5%]">
           <div className="w-[30%]">
-            <Image src={hSupport} />
+            {/* <Image src={hSupport} /> */}
             <div className="bg-[#FDE101] py-[1%] rounded-[10px] w-[10%] ml-[1.5%] flex flex-col justify-start items-center mt-[-3%] absolute">
               <h1 className="text-[18px] font-bold">in-Home</h1>
               <h1 className="text-[28px] font-bold">Support</h1>
