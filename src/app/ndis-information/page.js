@@ -45,7 +45,9 @@ const page = () => {
                   <h1 className="text-[1.2em] font-bold text-[#6A00C6] max-[768px]:text-[16px]">
                     Registered NDIS provider
                   </h1>
-                  <p className="text-[18px] max-[768px]:text-[13px]">Click to view</p>
+                  <p className="text-[18px] max-[768px]:text-[13px]">
+                    Click to view
+                  </p>
                 </div>
               </div>
             </div>
@@ -106,7 +108,9 @@ const page = () => {
         </div>
 
         <div>
-          <h1 className="text-[32px] font-bold mt-[3%] max-[768px]:text-[24px]">Who is Eligible?</h1>
+          <h1 className="text-[32px] font-bold mt-[3%] max-[768px]:text-[24px]">
+            Who is Eligible?
+          </h1>
           <div>
             <p className="text-[20px] text-[#979797] w-[70%] mt-[1%] max-[768px]:text-[16px] max-[768px]:w-[100%]">
               The NDIS is available to Australians under the age of 65 who have
@@ -124,7 +128,9 @@ const page = () => {
             Welcome to NDIS Information Hub
           </h1>
           <div className="text-left mt-[3%]">
-            <h1 className="text-[24px] text-[#0B69FF] max-[768px]:text-[18px]">Access and Planning:</h1>
+            <h1 className="text-[24px] text-[#0B69FF] max-[768px]:text-[18px]">
+              Access and Planning:
+            </h1>
             <ul className="text-[20px] text-[#979797] w-[70%] mt-[1%] max-[768px]:text-[16px] max-[768px]:w-[100%]">
               <li>Contact the NDIS to start the application process.</li>
               <li>
@@ -135,7 +141,9 @@ const page = () => {
           </div>
 
           <div className="text-left mt-[3%]">
-            <h1 className="text-[24px] text-[#0B69FF] max-[768px]:text-[18px]">Create a plan:</h1>
+            <h1 className="text-[24px] text-[#0B69FF] max-[768px]:text-[18px]">
+              Create a plan:
+            </h1>
             <ul className="text-[20px] text-[#979797] w-[70%] mt-[1%] max-[768px]:text-[16px] max-[768px]:w-[100%]">
               <li>
                 Develop a personalized plan outlining the support and services
@@ -203,7 +211,9 @@ const page = () => {
           </div>
 
           <div className="text-left mt-[3%]">
-            <h1 className="text-[24px] text-[#0B69FF] max-[768px]:text-[18px]">NDIS Resources</h1>
+            <h1 className="text-[24px] text-[#0B69FF] max-[768px]:text-[18px]">
+              NDIS Resources
+            </h1>
             <h1 className="text-[20px] text-[#7A7A7A] max-[768px]:text-[16px]">
               Explore our resources section for informative articles, guides,
               and downloadable materials that cover various aspects of the NDIS.
