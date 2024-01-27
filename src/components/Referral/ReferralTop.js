@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const ReferralTop = () => {
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] max-[768px]:hidden">
       <div className="bg-[#45CD81] text-[white] flex items-center py-[1%] px-[8%]">
         <div className="flex items-center w-[50%]">
           <div className="flex items-center w-[40%]">

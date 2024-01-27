@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const HomeTop = () => {
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] max-[768px]:hidden">
       <div className="bg-[#FAF3B7] flex items-center py-[1%] px-[8%]">
         <div className="flex items-center w-[50%]">
           <div className="flex items-center w-[40%]">

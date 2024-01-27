@@ -21,10 +21,10 @@ import clean from "../../../public/Assets/Svg/clean.svg";
 
 const AboutService = () => {
   return (
-    <div className="px-[15%] bg-[#FAEF99] py-[5%]">
+    <div className="px-[15%] bg-[#FAEF99] py-[5%] max-[768px]:px-[8%]">
       <div className="my-[3%]">
-        <h1 className="text-[46px] font-bold">Our Story</h1>
-        <p className="text-[16px] w-[70%] mt-[1%]">
+        <h1 className="text-[46px] font-bold max-[768px]:text-[28px]">Our Story</h1>
+        <p className="text-[16px] w-[70%] mt-[1%] max-[768px]:w-[100%] max-[768px]:text-[14px] max-[768px]:my-[55]">
           Our heartfelt mission, Edwin Care Support Service emerged from a
           passion for making a positive impact on the lives of those facing
           unique challenges. The journey began with a vision to create a caring,
@@ -33,8 +33,8 @@ const AboutService = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-left items-center text-[white]">
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+      <div className="flex flex-wrap justify-left items-center text-[white] max-[768px]:flex-no- wrap max-[768px]:flex-col">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service1} />
           <div className="bg-[#0B69FF] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={home} />
@@ -42,7 +42,7 @@ const AboutService = () => {
           </div>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service2} />
           <div className="bg-[#45CD81] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={social} />
@@ -52,7 +52,7 @@ const AboutService = () => {
           </div>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service3} />
           <div className="bg-[#E58A7B] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={world} />
@@ -61,7 +61,7 @@ const AboutService = () => {
             </h1>
           </div>
         </div>
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service4} />
           <div className="bg-[#F42BD3] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={develop} />
@@ -70,35 +70,35 @@ const AboutService = () => {
             </h1>
           </div>
         </div>
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service5} />
           <div className="bg-[#6A00C6] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={heart} />
             <h1 className="text-[18px] font-bold ml-[3%]">Allied Health</h1>
           </div>
         </div>
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service6} />
           <div className="bg-[#0B69FF] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={youth} />
             <h1 className="text-[18px] font-bold ml-[3%]">Youth Support</h1>
           </div>
         </div>
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service7} />
           <div className="bg-[#F99F9E] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={accomodate} />
             <h1 className="text-[18px] font-bold ml-[3%]">Accommodation Assistance </h1>
           </div>
         </div>
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service8} />
           <div className="bg-[#979797] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={nursing} />
             <h1 className="text-[18px] font-bold ml-[3%]">Nursing</h1>
           </div>
         </div>
-        <div className="w-[45%] mx-[2%] my-[2%] ">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
           <Image src={service9} />
           <div className="bg-[#45CD81] rounded-b-[10px] px-[5%] py-[4%] flex items-center">
             <Image src={clean} />

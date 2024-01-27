@@ -27,22 +27,22 @@ const SliderComp = () => {
     <div className="mt-[5%]">
       <Slider {...settings}>
         <div>
-          <Image src={slide1} />
+          <Image className="max-[768px]:h-[138px] max-[768px]:w-[260px]" src={slide1} />
         </div>
         <div className="mt-[5%]">
-          <Image src={slide2} />
+          <Image className="max-[768px]:h-[138px] max-[768px]:w-[260px]" src={slide2} />
         </div>
         <div>
-          <Image src={slide3} />
+          <Image className="max-[768px]:h-[138px] max-[768px]:w-[260px]" src={slide3} />
         </div>
         <div className="mt-[5%]">
-          <Image src={slide4} />
+          <Image className="max-[768px]:h-[138px] max-[768px]:w-[260px]" src={slide4} />
         </div>
         <div>
-          <Image src={slide5} />
+          <Image className="max-[768px]:h-[138px] max-[768px]:w-[260px]" src={slide5} />
         </div>
         <div className="mt-[5%]">
-          <Image src={slide6} />
+          <Image className="max-[768px]:h-[138px]" width={300} src={slide6} />
         </div>
       </Slider>
     </div>

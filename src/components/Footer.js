@@ -10,8 +10,8 @@ import pintrest from "../../public/Assets/Svg/pintrest.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-[#E58A7B] flex justify-between px-[8%] py-[5%] text-[white]">
-      <div className="w-[20%]">
+    <div className="bg-[#E58A7B] flex justify-between px-[8%] py-[5%] text-[white] max-[768px]:flex-col max-[768px]:py-[10%]">
+      <div className="w-[20%] max-[768px]:w-[100%]">
         <div className="flex items-center my-[2%]">
           <Image src={logoW} />
           <h1 className="ml-[2%] text-[20px]">Edwin Care</h1>
@@ -32,7 +32,7 @@ const Footer = () => {
           <Image src={instagram} />
         </div>
       </div>
-      <div>
+      <div className="max-[768px]:my-[5%]">
         <h1 className="text-[20px] font-bold">Services</h1>
         <h1 className="my-[2%]">In-Home support</h1>
         <h1 className="my-[2%]">Community participation</h1>
@@ -45,7 +45,7 @@ const Footer = () => {
         <h1 className="my-[2%]">Cleaning service</h1>
       </div>
 
-      <div >
+      <div className="max-[768px]:my-[5%]">
         <h1 className="text-[20px] font-bold">Allied Health</h1>
         <h1 className="my-[2%]">Occupational Therapy (OT)</h1>
         <h1 className="my-[2%]">Psychology (PSYCH)</h1>
@@ -53,7 +53,7 @@ const Footer = () => {
         <h1 className="my-[2%]">Physical Therapy (PT)</h1>
       </div>
 
-      <div>
+      <div className="max-[768px]:my-[5%]">
         <h1 className="text-[20px] font-bold">QUICK LINKS</h1>
         <h1 className="my-[2%]">About us</h1>
         <h1 className="my-[2%]">Privacy Policy</h1>

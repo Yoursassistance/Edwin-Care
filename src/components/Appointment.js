@@ -5,13 +5,13 @@ import appPhone from "../../public/Assets/Svg/appPhone.svg";
 
 const Appointment = () => {
   return (
-    <div className="bg-[#EFF5F5] flex px-[15%] py-[5%] justify-center items-center">
-      <div className="w-[40%]">
+    <div className="bg-[#EFF5F5] flex px-[15%] py-[5%] justify-center items-center max-[768px]:flex-col max-[768px]:px-[8%]">
+      <div className="w-[40%] max-[768px]:w-[100%] max-[768px]:my-[5%]">
         <h1 className="text-[#0B69FF] font-bold">APPOINTMENT</h1>
-        <h1 className="text-[40px] font-bold">
+        <h1 className="text-[40px] font-bold max-[768px]:text-[24px] max-[768px]:py-[5%]">
           Get in touch to book your first appointment
         </h1>
-        <h1 className="text-[20px] font-semibold my-[2%]">
+        <h1 className="text-[20px] font-semibold my-[2%] max-[768px]:text-[16px]">
           Ready to connect? Feel free to reach out to us – your questions,
           feedback, and inquiries are always welcome!
         </h1>
@@ -27,7 +27,7 @@ const Appointment = () => {
         </div>
       </div>
 
-      <div className="bg-white flex flex-col w-[40%] p-[3%] rounded-[20px] ml-[3%]">
+      <div className="bg-white flex flex-col w-[40%] p-[3%] rounded-[20px] ml-[3%] max-[768px]:w-[100%] max-[768px]:ml-[0] max-[768px]:p-[5%] max-[768px]:rounded-[10px]">
         <input
           className="border-[1px] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%]"
           placeholder="Name"

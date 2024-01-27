@@ -13,10 +13,10 @@ import serviceAccomodate from "../../../public/Assets/Svg/serviceAccomodate.svg"
 import serviceYouth from "../../../public/Assets/Svg/serviceYouth.svg";
 const Story = () => {
   return (
-    <div className="px-[15%] bg-[#45CD81] py-[5%]">
+    <div className="px-[15%] bg-[#45CD81] py-[5%] max-[768px]:px-[8%]">
       <div className="my-[3%]">
-        <h1 className="text-[40px] font-bold text-[white]">Our story</h1>
-        <p className="text-[16px] text-[white] w-[70%] mt-[1%]">
+        <h1 className="text-[40px] font-bold text-[white] max-[768px]:text-[28px]">Our story</h1>
+        <p className="text-[16px] text-[white] w-[70%] mt-[1%] max-[768px]:w-[100%]">
           Our heartfelt mission, Edwin Care Support Service emerged from a
           passion for making a positive impact on the lives of those facing
           unique challenges. The journey began with a vision to create a caring,
@@ -26,12 +26,12 @@ const Story = () => {
       </div>
 
       <div>
-        <div className="flex justify-between items-center my-[3%]">
-          <div className="w-[49%]">
+        <div className="flex justify-between items-center my-[3%] max-[768px]:flex-no-wrap max-[768px]:flex-col">
+          <div className="w-[49%] max-[768px]:w-[100%]">
             <Image width="100%" src={storyImg} />
             <div className="bg-[#0B69FF] text-[white] p-[2%] rounded-b-[13.23px]">
-              <h1 className="text-[20px] font-semibold ">Our Mission</h1>
-              <p className="text-[16px]">
+              <h1 className="text-[20px] font-semibold max-[768px]:text-[16px]">Our Mission</h1>
+              <p className="text-[16px] max-[768px]:text-[13px]">
                 Edwin Care Support Services is a registered NDIS provider,
                 working within Queensland. Our goal is to support our clients,
                 by encouraging them to live a more autonomous life.{" "}
@@ -39,11 +39,11 @@ const Story = () => {
             </div>
           </div>
 
-          <div className="w-[49%]">
+          <div className="w-[49%] max-[768px]:w-[100%]">
             <Image width="100%" src={storyImg2} />
             <div className="bg-[#FDE101] p-[2%] rounded-b-[13.23px]">
-              <h1 className="text-[20px] font-semibold ">Our Mission</h1>
-              <p className="text-[16px]">
+              <h1 className="text-[20px] font-semibold max-[768px]:text-[16px]">Our Mission</h1>
+              <p className="text-[16px] max-[768px]:text-[13px]">
                 Edwin Care Support Services is a registered NDIS provider,
                 working within Queensland. Our goal is to support our clients,
                 by encouraging them to live a more autonomous life.{" "}
@@ -52,16 +52,16 @@ const Story = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center max-[768px]:flex-col">
           <div
-            className="w-[49%] bg-no-repeat bg-contain h-[350px]"
+            className="w-[49%] bg-no-repeat bg-contain h-[350px] max-[768px]:w-[100%] max-[768px]:my-[5%] max-[768px]:h-[200px]"
             style={{
               backgroundImage: `url("/Assets/Images/storyImg3.png")`,
             }}
           >
             <div className="bg-[rgba(0,0,0,0.4)] w-[100%] h-[100%] rounded-[13.23px] flex items-center justify-center text-[white] flex-col px-[4%]">
-              <h1 className="text-[24px] font-bold">Our Mission</h1>
-              <p className="text-[16px] text-center">
+              <h1 className="text-[24px] font-bold max-[768px]:text-[18px]">Our Mission</h1>
+              <p className="text-[16px] text-center max-[768px]:text-[14px]">
                 Edwin Care Support Services is a registered NDIS provider,
                 working within Queensland. Our goal is to support our clients,
                 by encouraging them to live a more autonomous life.{" "}
@@ -70,14 +70,14 @@ const Story = () => {
           </div>
 
           <div
-            className="w-[49%] bg-no-repeat bg-contain h-[350px]"
+            className="w-[49%] bg-no-repeat bg-contain h-[350px] max-[768px]:w-[100%] max-[768px]:my-[5%] max-[768px]:h-[200px]"
             style={{
               backgroundImage: `url("/Assets/Images/storyImg4.png")`,
             }}
           >
             <div className="bg-[rgba(0,0,0,0.4)] w-[100%] h-[100%] rounded-[13.23px] flex items-center justify-center text-[white] flex-col px-[4%]">
-              <h1>Our Mission</h1>
-              <p>
+              <h1 className="text-[24px] font-bold max-[768px]:text-[18px]">Our Mission</h1>
+              <p className="text-[16px] text-center max-[768px]:text-[14px]">
                 Edwin Care Support Services is a registered NDIS provider,
                 working within Queensland. Our goal is to support our clients,
                 by encouraging them to live a more autonomous life.{" "}
@@ -88,58 +88,58 @@ const Story = () => {
       </div>
 
       <div className="mt-[5%]">
-        <h1 className="text-[40px] font-bold">What we do</h1>
+        <h1 className="text-[40px] font-bold max-[768px]:text-[28px]">What we do</h1>
 
-        <div className="flex flex-wrap items-center justify-around">
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceHome} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">
+        <div className="flex flex-wrap items-center justify-around" style={{lineHeight: "10px"}}>
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceHome} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">
               In-Home Support
             </h1>
           </div>
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceCommunity} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceCommunity} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">
               Social & Community Participation
             </h1>
           </div>
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceWorld} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceWorld} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">
               Assistance with Travel and Transport
             </h1>
           </div>
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceDevelop} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceDevelop} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">
               Development of life skills
             </h1>
           </div>
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceHeart} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceHeart} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">
               Allied Health
             </h1>
           </div>
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceYouth} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceYouth} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">
               Youth Support
             </h1>
           </div>
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceAccomodate} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceAccomodate} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">
               Accommodation Assistance{" "}
             </h1>
           </div>
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceNursing} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">Nursing</h1>
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceNursing} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">Nursing</h1>
           </div>
-          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%]">
-            <Image src={serviceClean} />
-            <h1 className="ml-[2%] font-bold flex-1 text-[18px] ">
+          <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
+            <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceClean} />
+            <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">
               Cleaning Service
             </h1>
           </div>

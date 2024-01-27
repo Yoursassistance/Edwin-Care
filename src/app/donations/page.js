@@ -2,14 +2,11 @@
 import Header from "@/components/HomeComponents/Header";
 import HomeTop from "@/components/HomeComponents/HomeTop";
 import React from "react";
-import heroImg from "../../public/Assets/Images/hero.png";
-import heroImgMobile from "../../public/Assets/Images/heroMobile.png";
+import heroImg from "../../../public/Assets/Images/donationHero.png";
+import heroImgMobile from "../../../public/Assets/Images/heroMobile.png";
 import Image from "next/image";
-import shield from "../../public/Assets/Svg/shield.svg";
-import humanLove from "../../public/Assets/Svg/humanLove.svg";
-import DedicatedService from "@/components/HomeComponents/DedicatedService";
-import HomeServices from "@/components/HomeComponents/HomeServices";
-import ChooseUs from "@/components/HomeComponents/ChooseUs";
+import shield from "../../../public/Assets/Svg/shield.svg";
+import humanLove from "../../../public/Assets/Svg/humanLove.svg";
 import Appointment from "@/components/Appointment";
 import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
@@ -73,9 +70,7 @@ const page = () => {
           )}
         </div>
       </div>
-      <DedicatedService />
-      <HomeServices />
-      <ChooseUs />
+      
       <Appointment />
       <Footer />
     </div>
