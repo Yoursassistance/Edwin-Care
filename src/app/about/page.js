@@ -15,12 +15,15 @@ import { useState, useEffect } from "react";
 
 
 const page = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 768);
     };
+
+    // Set the initial value of isSmallScreen
+    handleResize();
 
     // Attach event listener for window resize
     window.addEventListener("resize", handleResize);
