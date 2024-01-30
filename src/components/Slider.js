@@ -42,7 +42,7 @@ const SliderComp = () => {
           <Image className="max-[768px]:h-[138px] max-[768px]:w-[260px]" src={slide5} />
         </div>
         <div className="mt-[5%]">
-          <Image className="max-[768px]:h-[138px]" width={300} src={slide6} />
+          <Image className="max-[768px]:h-[138px]" src={slide6} />
         </div>
       </Slider>
     </div>

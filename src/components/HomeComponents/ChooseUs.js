@@ -58,11 +58,11 @@ const ChooseUs = () => {
           </div>
         </div>
 
-        <div className="px-[13%] mt-[5%] max-[768px]:px-[0]">
+        <div className="px-[13%] mt-[5%] max-[768px]:px-[0] text-center">
           <h1 className="text-[40px] font-bold max-[768px]:text-[28px]">
             Wellness, Compassion, Quality
           </h1>
-          <h1 className="text-[20px] w-[80%] my-[1%] max-[768px]:text-[16px] max-[768px]:w-[100%] max-[768px]:py-[5%]">
+          <h1 className="text-[20px] w-[100%] my-[1%] max-[768px]:text-[16px] max-[768px]:w-[100%] max-[768px]:py-[5%]">
             Your journey to health and happiness begins with our unwavering
             focus on Wellness, delivered with genuine Compassion and
             uncompromising Quality.
@@ -78,7 +78,7 @@ const ChooseUs = () => {
           <h1 className="text-[40px] font-bold max-[768px]:text-[28px]">
             Health Checkup Plans
           </h1>
-          <h1>
+          <h1 className="mt-[2%]">
             Embrace a proactive approach to health maintenance with our Health
             Checkup Plans, ensuring a healthier and happier you.
           </h1>
@@ -100,10 +100,10 @@ const ChooseUs = () => {
         <div className="flex text-left items-center mt-[8%] max-[768px]:flex-col">
           <div>
             <Image src={logoIcon} />
-            <h1 className="text-[32px] font-bold max-[768px]:text-[22px]">
+            <h1 className="text-[32px] mt-[2%] font-bold max-[768px]:text-[22px]">
               Health Checkup
             </h1>
-            <h1 className="w-[80%]">
+            <h1 className="w-[70%] mt-[2%] leading-[30px]">
               A wonderful serenity has taken possession of my entire soul, like
               these sweet mornings of spring.
             </h1>
@@ -112,39 +112,39 @@ const ChooseUs = () => {
               <Image src={checkedB} />
               <h1 className="ml-[2%]">Occupational Therapy (OT)</h1>
             </div>
-            <div className="flex my-[1%]">
+            <div className="flex my-[2%]">
               <Image src={checkedB} />
               <h1 className="ml-[2%]">Psychology (PSYCH)</h1>
             </div>
-            <div className="flex my-[1%]">
+            <div className="flex my-[2%]">
               <Image src={checkedB} />
               <h1 className="ml-[2%]">Positive Behavior Support (PBS)</h1>
             </div>
-            <div className="flex my-[1%]">
+            <div className="flex my-[2%]">
               <Image src={checkedB} />
               <h1 className="ml-[2%]">Physical Therapy (PT) (PBS)</h1>
             </div>
             <div className="mt-[5%]">
-              <buuton className="h-[60px] py-[2%] bg-[#FDE101] px-[5%] rounded-[5px]">
+              <buuton className="h-[60px] py-[2%] font-semibold bg-[#FDE101] px-[5%] rounded-[5px]">
                 Get in touch
               </buuton>
             </div>
           </div>
           <div className="max-[768px]:mt-[5%]">
-            <Image src={plansImg} />
+            <Image className="rounded-[10px] shadow-xl" src={plansImg} />
           </div>
         </div>
 
-        <div className="flex justify-between items-center mt-[8%]">
+        <div className="flex justify-between items-center mt-[10%]">
           <div className="w-[10%]">
             <Image src={circleLeft} />
           </div>
           <div className="flex w-[80%] justify-between max-[768px]:flex-col max-[768px]:ml-[5%]">
-            <div className="w-[40%] max-[768px]:w-[80%]">
+            <div className="w-[49%] max-[768px]:w-[80%]">
               <Image src={testi} />
             </div>
 
-            <div className="w-[40%] max-[768px]:w-[100%]">
+            <div className="w-[49%] max-[768px]:w-[100%]">
               <Image className="my-[2%] max-[768px]:w-[10%]" src={qutation} />
               <Image className="mb-[2%] max-[768px]:w-[20%]" src={fstar} />
               <h1 className="text-left text-[20px] max-[768px]:text-[14px]">

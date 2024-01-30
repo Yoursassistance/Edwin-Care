@@ -13,7 +13,7 @@ const HomeServices = () => {
         <div className="flex justify-between mb-[4%] max-[768px]:flex-col">
           <div>
             <h1 className="text-[#0B69FF] font-bold">SERVICES & TREATMENTS</h1>
-            <h1 className="text-[46px] font-bold text-white w-[70%] max-[768px]:text-[28px] max-[768px]:w-[100%]">
+            <h1 className="text-[46px] font-semibold mt-[3%]  text-white w-[70%] max-[768px]:text-[28px] max-[768px]:w-[100%]">
               Offering 10 In-dept specialty and health care services
             </h1>
           </div>
@@ -29,15 +29,15 @@ const HomeServices = () => {
             <div className="w-[15%] mr-[2%] max-[768px]:w-[40%]">
               <Image src={serviceHome} width="100%" />
             </div>
-            <div className="pb-[5%] max-[768px]:-[60%]">
-              <h1 className="text-[30px] font-bold max-[768px]:text-[20px]">In-Home Support</h1>
-              <p className="w-[80%] max-[768px]:text-[14px] max-[768px]:w-[100%]">
+            <div className="pb-[5%] w-[70%] max-[768px]:-[60%]">
+              <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">In-Home Support</h1>
+              <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%]">
                 Our In-Home Support services are designed to empower individuals
                 with disabilities, fostering independence within the comfort of
                 their homes.
               </p>
             </div>
-            <div className="flex flex-col justify-end items-end w-[20%] max-[768px]:w-[50%]">
+            <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[50%]">
               <Image src={arrowRight} width="100%" />
             </div>
           </div>
@@ -46,15 +46,15 @@ const HomeServices = () => {
             <div className="w-[15%] mr-[2%] max-[768px]:w-[40%]">
               <Image src={serviceCommunity} width="100%" />
             </div>
-            <div className="pb-[5%] max-[768px]:-[60%]">
-              <h1 className="text-[30px] font-bold max-[768px]:text-[20px]">Community Participation</h1>
-              <p className="w-[80%] max-[768px]:text-[14px] max-[768px]:w-[100%]">
+            <div className="pb-[5%] w-[70%] max-[768px]:-[60%]">
+              <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">Community Participation</h1>
+              <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%]">
                 Engage, connect, and thrive through meaningful Community
                 Participation initiatives that celebrate diversity and
                 inclusivity.
               </p>
             </div>
-            <div className="flex flex-col justify-end items-end w-[20%] max-[768px]:w-[50%]">
+            <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[50%]">
               <Image src={arrowRight} width="100%" />
             </div>
           </div>
@@ -63,15 +63,15 @@ const HomeServices = () => {
             <div className="w-[15%] mr-[2%] max-[768px]:w-[40%]">
               <Image src={serviceWorld} width="100%" />
             </div>
-            <div className="pb-[5%] max-[768px]:-[60%]">
-              <h1 className="text-[30px] font-bold max-[768px]:text-[20px]">Assistance with Travel and Transport</h1>
-              <p className="w-[80%] max-[768px]:text-[14px] max-[768px]:w-[100%]">
+            <div className="pb-[5%] w-[70%] max-[768px]:-[60%]">
+              <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">Assistance with Travel and Transport</h1>
+              <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%]">
                 Explore the world with confidence, knowing our Travel and
                 Transport assistance is here to support your every step of the
                 way.
               </p>
             </div>
-            <div className="flex flex-col justify-end items-end w-[20%] max-[768px]:w-[50%]">
+            <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[50%]">
               <Image src={arrowRight} width="100%" />
             </div>
           </div>
@@ -80,14 +80,14 @@ const HomeServices = () => {
             <div className="w-[15%] mr-[2%] max-[768px]:w-[40%]">
               <Image src={serviceHeart} width="100%" />
             </div>
-            <div className="pb-[5%] max-[768px]:-[60%]">
-              <h1 className="text-[30px] font-bold max-[768px]:text-[20px]">Allied Health</h1>
-              <p className="w-[80%] max-[768px]:text-[14px] max-[768px]:w-[100%]"> 
+            <div className="pb-[5%] w-[70%] max-[768px]:-[60%]">
+              <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">Allied Health</h1>
+              <p className="w-[90%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%]"> 
                 Elevate your well-being with our comprehensive Allied Health
                 services, where expertise meets personalized care.
               </p>
             </div>
-            <div className="flex flex-col justify-end items-end w-[20%] max-[768px]:w-[50%]">
+            <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[50%]">
               <Image src={arrowRight} width="100%" />
             </div>
           </div>

@@ -23,8 +23,8 @@ const AboutService = () => {
   return (
     <div className="px-[15%] bg-[#FAEF99] py-[5%] max-[768px]:px-[8%]">
       <div className="my-[3%]">
-        <h1 className="text-[46px] font-bold max-[768px]:text-[28px]">Our Story</h1>
-        <p className="text-[16px] w-[70%] mt-[1%] max-[768px]:w-[100%] max-[768px]:text-[14px] max-[768px]:my-[55]">
+        <h1 className="text-[42px] font-bold max-[768px]:text-[28px]">Our Story</h1>
+        <p className="text-[16px] leading-[40px] w-[80%] mt-[1%] max-[768px]:w-[100%] max-[768px]:text-[14px] max-[768px]:my-[55]">
           Our heartfelt mission, Edwin Care Support Service emerged from a
           passion for making a positive impact on the lives of those facing
           unique challenges. The journey began with a vision to create a caring,

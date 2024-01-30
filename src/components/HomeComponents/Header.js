@@ -5,6 +5,7 @@ import logoB from "../../../public/Assets/Svg/logoB.svg";
 import phone from "../../../public/Assets/Svg/phoneG.svg";
 import Link from "next/link";
 import menu from "../../../public/Assets/Svg/menu.svg";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -33,7 +34,6 @@ const Header = () => {
     } else {
       dropDown.classList.add("hidden");
     }
-   
   };
 
   return (
@@ -50,7 +50,7 @@ const Header = () => {
 
                 <div
                   id="dropDown"
-                  className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex flex-col absolute shadow-lg rounded-[10px] hidden"
+                  className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col absolute shadow-lg rounded-[10px] hidden"
                 >
                   <Link
                     href="/"
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       ) : (
         <div className="flex px-[2%] py-[1%] items-center mt-[2%] bg-white mx-[8%] shadow-lg">
-          <div className="flex items-center w-[50%]">
+          <div className="flex items-center w-[45%]">
             <Link href="/" className="mr-[2%] font-bold text-[#45CD81]">
               Home
             </Link>
@@ -127,19 +127,29 @@ const Header = () => {
               Donations
             </Link>
           </div>
-          <div className="w-[35%]">
+
+          <div className="w-[15%]">
             <Image src={logoB} width="100%" />
           </div>
-          <div className="flex items-center w-[25%]">
-            <div className="flex items-center w-[50%]">
+
+          <div className="flex items-center justify-end w-[40%]">
+            <div className="flex items-center w-[30%]">
               <Image src={phone} width="100%" />
-              <h1 className="text-[#979797] text-[16px] ml-[3%]">
+              <a
+                href="tel:0455733143"
+                className="text-[#979797] text-[16px] ml-[3%]"
+              >
                 0455 733 143
-              </h1>
+              </a>
             </div>
-            <div className="w-[50%]">
-              <button className="bg-[#45CD81] text-[#ffffff] px-[20%] py-[10%] rounded-[5px]">
-                Get in touch
+
+            <div className="w-[40%]">
+              <button className="bg-[#45CD81] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">
+                <Link href="#section1">
+                  <ScrollLink to="section1" smooth={true} duration={3000}>
+                    Get in touch
+                  </ScrollLink>
+                </Link>
               </button>
             </div>
           </div>

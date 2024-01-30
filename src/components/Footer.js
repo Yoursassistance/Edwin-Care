@@ -6,7 +6,7 @@ import whatsappF from "../../public/Assets/Svg/whatsappF.svg";
 import facebook from "../../public/Assets/Svg/facebook.svg";
 import twitter from "../../public/Assets/Svg/twitter.svg";
 import instagram from "../../public/Assets/Svg/instagram.svg";
-import pintrest from "../../public/Assets/Svg/pintrest.svg";
+import pintrest from "../../public/Assets/Svg/whatsappWW.svg";
 
 const Footer = () => {
   return (

@@ -36,7 +36,7 @@ const page = () => {
 
   return (
     <div className="w-[100%]">
-      <div className="bg-[#F9F7E5] h-[100vh] max-[768px]:h-[auto]">
+      <div className="bg-[#F9F7E5] h-[100%] pb-[5%] max-[768px]:h-[auto]">
         <HomeTop />
         <Header />
         <div className="px-[13%] max-[768px]:px-[4%]">
@@ -58,17 +58,17 @@ const page = () => {
               <div className="ml-[50%] mt-[6%] mb-[-11%] flex justify-start items-start">
                 <Image src={shield} width="120%" className="mt-[3px]" />
                 <div>
-                  <h1 className="text-[1.2em] font-bold text-[#6A00C6] ">
+                  <h1 className="text-[18px] font-bold text-[#6A00C6] ">
                     Registered NDIS provider
                   </h1>
-                  <p className="text-[18px]">Click to view</p>
+                  <p className="text-[16px]">Click to view</p>
                 </div>
               </div>
-              <div className="bg-white p-[1%] w-[12%] mb-[-2%] mt-[11%] ml-[-5%] flex absolute shadow-lg">
+              <div className="bg-white p-[1%] w-max mb-[-2%] mt-[11%] ml-[-5%] flex absolute shadow-lg">
                 <Image src={humanLove} width="10%" className="mr-[5%]" />
-                <div className="w-fit">
-                  <h1 className="font-[600]">More than 500+</h1>
-                  <p className="font-[600]">active participant</p>
+                <div className="w-[100%]">
+                  <h1 className="font-[600] w-fit">More than 500+</h1>
+                  <p className="font-[600] w-max">active participant</p>
                 </div>
               </div>
               <Image src={heroImg} width="100%" className="mt-[6%]" />

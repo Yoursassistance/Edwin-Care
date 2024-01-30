@@ -48,7 +48,7 @@ const Header = () => {
 
                 <div
                   id="dropDown"
-                  className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex flex-col absolute shadow-lg rounded-[10px] hidden"
+                  className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col absolute shadow-lg rounded-[10px] hidden"
                 >
                   <Link
                     href="/"
