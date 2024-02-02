@@ -47,7 +47,7 @@ const page = () => {
               <div className="text-center">
                 <button
                   onClick={handleNextClick}
-                  className="mt-[5%] bg-[#6A00C6] text-[white] px-[10%] mb-[5%] py-[2%] rounded-[8px]"
+                  className="mt-[5%] bg-[#6A00C6] text-[white] px-[10%] mb-[5%] py-[2%] rounded-[8px] max-[768px]:text-[13px]"
                 >
                   {currentStep === 1 && "Next "}
                   {currentStep === 2 && "Next "}
