@@ -1,9 +1,8 @@
 "use client";
-import Header from "@/components/HomeComponents/Header";
 import HomeTop from "@/components/HomeComponents/HomeTop";
 import React from "react";
 import heroImg from "../../../public/Assets/Images/donationHero.png";
-import heroImgMobile from "../../../public/Assets/Images/heroMobile.png";
+import heroImgMobile from "../../../public/Assets/Images/donationHeroMobile.png";
 import Image from "next/image";
 import shield from "../../../public/Assets/Svg/shield.svg";
 import humanLove from "../../../public/Assets/Svg/humanLove.svg";
@@ -12,7 +11,8 @@ import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
 import WhyDonate from "@/components/DonationComponents/WhyDonate";
 import logo from "../../../public/Assets/Svg/logoIcon.svg";
-import donateImgM from "../../../public/Assets/Images/donateImgM.svg";
+import donateImgM from "../../../public/Assets/Images/donateImgM.png";
+import Header from "@/components/DonationComponents/Header";
 
 const page = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -97,9 +97,9 @@ const page = () => {
         )}
 
         <div className="flex-[1.3] ">
-          <div className="flex items-center">
+          <div className="flex items-center max-[768px]:mt-[3%]">
             <Image src={logo} width={40} />
-            <h1 className="text-[24px] font-semibold">
+            <h1 className="text-[24px] font-semibold max-[768px]:text-[20px]">
               Edwin Care Support Service
             </h1>
           </div>
@@ -150,9 +150,7 @@ const page = () => {
 
               <div className="w-[49%] flex p-[2%] rounded-[5px] border-[1px]">
                 <input className="w-[15px]" type="radio" />
-                <p className="text-[18px] font-normal ml-[2%]">
-                  One time Payment
-                </p>
+                <p className="text-[18px] font-normal ml-[2%]">One Time</p>
               </div>
             </div>
             <p className="text-[14px] text-[#828282] mt-[2%]">
@@ -172,20 +170,22 @@ const page = () => {
         </div>
       </div>
 
-      <div className="px-[15%] py-[5%]">
+      <div className="px-[15%] py-[5%] max-[768px]:px-[5%]">
         <div>
-          <h1 className="text-[42px] font-bold">How your donations help:</h1>
-          <p className="text-[18px] text-[#979797]">
+          <h1 className="text-[42px] font-bold max-[768px]:text-[28px]">
+            How your donations help:
+          </h1>
+          <p className="text-[18px] text-[#979797] max-[768px]:text-[16px] max-[768px]:mt-[2%]">
             At Edwin Care Support Service, your donations directly supports:
           </p>
         </div>
 
-        <div className="flex justify-between mt-[3%]">
+        <div className="flex justify-between mt-[3%] max-[768px]:flex-col max-[768px]:leading-[40px]">
           <div>
-            <h1 className="text-[#E58A7B] text-[28px] font-semibold">
+            <h1 className="text-[#E58A7B] text-[28px] font-semibold max-[768px]:text-[20px]">
               Programs:
             </h1>
-            <p className="text-[18px] text-[#979797]">
+            <p className="text-[18px] text-[#979797] max-[768px]:text-[15px]">
               At{" "}
               <span className="text-[#6A00C6] font-semibold">Edwin Care</span>,
               our programs are designed to empower individuals with disabilities
@@ -196,10 +196,10 @@ const page = () => {
           </div>
 
           <div>
-            <h1 className="text-[#6A00C6] text-[28px] font-semibold">
+            <h1 className="text-[#6A00C6] text-[28px] font-semibold max-[768px]:text-[20px]">
               Equipment:
             </h1>
-            <p className="text-[18px] text-[#979797]">
+            <p className="text-[18px] text-[#979797] max-[768px]:text-[15px]">
               Your donation contributes to acquiring essential equipment that
               enhances the quality of life for individuals with disabilities.
               Whether it's adaptive technologies, mobility aids, or specialized
@@ -209,12 +209,12 @@ const page = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mt-[3%]">
-          <div className="w-[50%]">
-            <h1 className="text-[#F42BD3] text-[28px] font-semibold">
+        <div className="flex justify-between mt-[3%] max-[768px]:flex-col max-[768px]:leading-[40px]">
+          <div className="w-[50%] max-[768px]:w-[100%]">
+            <h1 className="text-[#F42BD3] text-[28px] font-semibold max-[768px]:text-[20px]">
               Support Services:
             </h1>
-            <p className="text-[18px] text-[#979797]">
+            <p className="text-[18px] text-[#979797] max-[768px]:text-[15px]">
               We offer a range of support services aimed at addressing the
               unique needs of individuals with disabilities. This includes
               counseling, advocacy, and assistance with daily living activities.
@@ -224,26 +224,26 @@ const page = () => {
             </p>
           </div>
 
-          <div className="w-[50%] ml-[3%] flex items-center  justify-start">
-            <h1 className="bg-[#6F6F6F] text-[white] p-[5%] rounded-[5px] text-[20px] font-semibold">
+          <div className="w-[50%] ml-[3%] flex items-center  justify-start max-[768px]:w-[100%] max-[768px]:ml-[0] max-[768px]:mt-[3%]">
+            <h1 className="bg-[#6F6F6F] text-[white] p-[5%] rounded-[5px] text-[20px] font-semibold max-[768px]:text-[15px]">
               Click to scroll to donation section
             </h1>
           </div>
         </div>
 
-        <div className="flex justify-between rounded-[10px] bg-[#E58A7B] p-[2%] mt-[3%] items-center">
-          <div className="text-[white] w-[30%]">
-            <h1 className="text-[20px] font-semibold">
+        <div className="flex justify-between rounded-[10px] bg-[#E58A7B] p-[2%] mt-[3%] items-center max-[768px]:flex-col max-[768px]:py-[7%] max-[768px]:px-[5%]">
+          <div className="text-[white] w-[30%] max-[768px]:w-[100%] max-[768px]:text-center">
+            <h1 className="text-[20px] font-semibold max-[768px]:text-[16px]">
               Do you have a major donation in mind?
             </h1>
-            <p>Talk to us</p>
+            <p className="max-[768px]:text-[14px]">Talk to us</p>
           </div>
-          <div className="w-[30%]">
+          <div className="w-[30%] max-[768px]:w-[100%] max-[768px]:my-[3%]">
             <button className="p-[3%] text-[white] bg-[#E58A7B] border-[1px] w-[100%] rounded-[5px] border-[white]">
               Send an Email
             </button>
           </div>
-          <div className="w-[30%]">
+          <div className="w-[30%] max-[768px]:w-[100%]">
             <button className="p-[3%] bg-[white] w-[100%] rounded-[5px]">
               Call Us
             </button>
