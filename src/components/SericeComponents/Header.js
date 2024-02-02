@@ -7,9 +7,9 @@ import Link from "next/link";
 import menu from "../../../public/Assets/Svg/menu.svg";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,13 +29,9 @@ const Header = () => {
   }, []);
 
   const handleClick = () => {
-    const dropDown = document.getElementById("dropDown");
-    if (dropDown.classList.contains("hidden")) {
-      dropDown.classList.remove("hidden");
-    } else {
-      dropDown.classList.add("hidden");
-    }
+    setIsDropdownVisible(!isDropdownVisible);
   };
+
   return (
     <div>
       {isSmallScreen ? (
@@ -48,47 +44,49 @@ const Header = () => {
               <div>
                 <Image onClick={handleClick} className="menu" src={menu} />
 
-                <div
-                  id="dropDown"
-                  className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col absolute shadow-lg rounded-[10px] hidden"
-                >
-                  <Link
-                    href="/"
-                    className="mr-[2%] text-[14px] text-[#979797] my-[3%]"
+                {isDropdownVisible && (
+                  <div
+                    id="dropDown"
+                    className=" bg-white p-[4%] w-[40%] flex mt-[10%] ml-[-32%] flex-col absolute shadow-lg rounded-[10px]"
                   >
-                    Home
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="mr-[2%] font-bold text-[#0B69FF] text-[14px] my-[3%]"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    href="/ndis-information"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    NDIS Information
-                  </Link>
-                  <Link
-                    href="/referrals"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Referrals
-                  </Link>
-                  <Link
-                    href="/donations"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Donations
-                  </Link>
-                </div>
+                    <Link
+                      href="/"
+                      className="mr-[2%] text-[14px] text-[#979797] my-[3%]"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      href="/about"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href="/services"
+                      className="mr-[2%] font-bold text-[#0B69FF] text-[14px] my-[3%]"
+                    >
+                      Services
+                    </Link>
+                    <Link
+                      href="/ndis-information"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      NDIS Information
+                    </Link>
+                    <Link
+                      href="/referrals"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Referrals
+                    </Link>
+                    <Link
+                      href="/donations"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Donations
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -133,13 +131,16 @@ const Header = () => {
           <div className="flex items-center justify-end w-[40%]">
             <div className="flex items-center w-[30%]">
               <Image src={phone} width="100%" />
-              <a href="tel:0455733143" className="text-[#979797] text-[16px] ml-[3%]">
+              <a
+                href="tel:0455733143"
+                className="text-[#979797] text-[16px] ml-[3%]"
+              >
                 0455 733 143
               </a>
             </div>
             <div className="w-[40%]">
               <button className="bg-[#0B69FF] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">
-              <Link href="#section1">
+                <Link href="#section1">
                   <ScrollLink to="section1" smooth={true} duration={3000}>
                     Get in touch
                   </ScrollLink>

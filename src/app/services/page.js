@@ -78,7 +78,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="px-[15%] py-[5%] text-[black]">
+      <div className="px-[15%] py-[5%] text-[black] max-[768px]:px-[8%]">
         <div>
           <h1 className="text-[42px] font-bold max-[768px]:text-[28px]">Our Services</h1>
           <p className="text-[20px] text-[#979797] mt-[3%] leading-[40px] w-[80%] max-[768px]:text-[16px] max-[768px]:w-[100%] max-[768px]:my-[5%]">

@@ -9,6 +9,8 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,12 +30,7 @@ const Header = () => {
   }, []);
 
   const handleClick = () => {
-    const dropDown = document.getElementById("dropDown");
-    if (dropDown.classList.contains("hidden")) {
-      dropDown.classList.remove("hidden");
-    } else {
-      dropDown.classList.add("hidden");
-    }
+    setIsDropdownVisible(!isDropdownVisible);
   };
 
   return (
@@ -48,9 +45,10 @@ const Header = () => {
               <div>
                 <Image onClick={handleClick} className="menu" src={menu} />
 
+                {isDropdownVisible && (
                 <div
                   id="dropDown"
-                  className=" bg-white p-[4%] w-[45%] mt-[10%] ml-[-37%] flex-col absolute shadow-lg rounded-[10px] hidden"
+                  className=" bg-white p-[4%] w-[48%] mt-[10%] ml-[-39%] flex-col absolute shadow-lg rounded-[10px] flex"
                 >
                   <Link
                     href="/"
@@ -89,6 +87,7 @@ const Header = () => {
                     Donations
                   </Link>
                 </div>
+                )}
               </div>
             </div>
           </div>

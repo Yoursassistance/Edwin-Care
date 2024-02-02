@@ -16,7 +16,7 @@ const Story = () => {
     <div className="px-[15%] bg-[#45CD81] py-[5%] max-[768px]:px-[8%]">
       <div className="my-[3%]">
         <h1 className="text-[40px] font-bold text-[white] max-[768px]:text-[28px]">Our story</h1>
-        <p className="text-[16px] text-[white] w-[70%] mt-[1%] max-[768px]:w-[100%]">
+        <p className="text-[16px] text-[white] w-[70%] mt-[1%] max-[768px]:w-[100%] max-[768px]:leading-[40px]">
           Our heartfelt mission, Edwin Care Support Service emerged from a
           passion for making a positive impact on the lives of those facing
           unique challenges. The journey began with a vision to create a caring,
@@ -39,7 +39,7 @@ const Story = () => {
             </div>
           </div>
 
-          <div className="w-[49%] max-[768px]:w-[100%]">
+          <div className="w-[49%] max-[768px]:w-[100%] max-[768px]:mt-[8%]">
             <Image width="100%" src={storyImg2} />
             <div className="bg-[#FDE101] p-[2%] rounded-b-[13.23px]">
               <h1 className="text-[20px] font-semibold max-[768px]:text-[16px]">Our Mission</h1>
@@ -54,12 +54,12 @@ const Story = () => {
 
         <div className="flex justify-between items-center max-[768px]:flex-col">
           <div
-            className="w-[49%] bg-no-repeat bg-contain h-[350px] max-[768px]:w-[100%] max-[768px]:my-[5%] max-[768px]:h-[200px]"
+            className="w-[49%] bg-no-repeat bg-contain h-[350px] max-[768px]:w-[100%] max-[768px]:my-[5%] max-[768px]:h-[200px] max-[768px]:rounded-[13.23px]"
             style={{
               backgroundImage: `url("/Assets/Images/storyImg3.png")`,
             }}
           >
-            <div className="bg-[rgba(0,0,0,0.4)] w-[100%] h-[100%] rounded-[13.23px] flex items-center justify-center text-[white] flex-col px-[4%]">
+            <div className=" w-[100%] h-[100%] rounded-[13.23px] flex items-center justify-center text-[white] flex-col px-[4%]">
               <h1 className="text-[24px] font-bold max-[768px]:text-[18px]">Our Mission</h1>
               <p className="text-[16px] text-center max-[768px]:text-[14px]">
                 Edwin Care Support Services is a registered NDIS provider,
@@ -70,12 +70,12 @@ const Story = () => {
           </div>
 
           <div
-            className="w-[49%] bg-no-repeat bg-contain h-[350px] max-[768px]:w-[100%] max-[768px]:my-[5%] max-[768px]:h-[200px]"
+            className="w-[49%] bg-no-repeat bg-contain h-[350px] max-[768px]:w-[100%] max-[768px]:my-[5%] max-[768px]:h-[201px] max-[768px]:rounded-[13.23px]"
             style={{
               backgroundImage: `url("/Assets/Images/storyImg4.png")`,
             }}
           >
-            <div className="bg-[rgba(0,0,0,0.4)] w-[100%] h-[100%] rounded-[13.23px] flex items-center justify-center text-[white] flex-col px-[4%]">
+            <div className="w-[100%] h-[100%] flex items-center justify-center text-[white] flex-col px-[4%]">
               <h1 className="text-[24px] font-bold max-[768px]:text-[18px]">Our Mission</h1>
               <p className="text-[16px] text-center max-[768px]:text-[14px]">
                 Edwin Care Support Services is a registered NDIS provider,
@@ -89,8 +89,7 @@ const Story = () => {
 
       <div className="mt-[5%]">
         <h1 className="text-[40px] font-bold max-[768px]:text-[28px]">What we do</h1>
-
-        <div className="flex flex-wrap items-center justify-around" style={{lineHeight: "20px"}}>
+        <div className="flex flex-wrap items-center justify-around max-[768px]:leading-[10px]">
           <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
             <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceHome} />
             <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">

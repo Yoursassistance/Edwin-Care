@@ -9,6 +9,7 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,13 +29,9 @@ const Header = () => {
   }, []);
 
   const handleClick = () => {
-    const dropDown = document.getElementById("dropDown");
-    if (dropDown.classList.contains("hidden")) {
-      dropDown.classList.remove("hidden");
-    } else {
-      dropDown.classList.add("hidden");
-    }
+    setIsDropdownVisible(!isDropdownVisible);
   };
+
   return (
     <div>
       {isSmallScreen ? (
@@ -47,47 +44,49 @@ const Header = () => {
               <div>
                 <Image onClick={handleClick} className="menu" src={menu} />
 
-                <div
-                  id="dropDown"
-                  className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col absolute shadow-lg rounded-[10px] hidden"
-                >
-                  <Link
-                    href="/"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                {isDropdownVisible && (
+                  <div
+                    id="dropDown"
+                    className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col flex absolute shadow-lg rounded-[10px]"
                   >
-                    Home
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="mr-[2%] font-bold text-[#E58A7B] my-[3%]"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    href="/ndis-information"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    NDIS Information
-                  </Link>
-                  <Link
-                    href="/referrals"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Referrals
-                  </Link>
-                  <Link
-                    href="/donations"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Donations
-                  </Link>
-                </div>
+                    <Link
+                      href="/"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      href="/about"
+                      className="mr-[2%] font-bold text-[#E58A7B] my-[3%]"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href="/services"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Services
+                    </Link>
+                    <Link
+                      href="/ndis-information"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      NDIS Information
+                    </Link>
+                    <Link
+                      href="/referrals"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Referrals
+                    </Link>
+                    <Link
+                      href="/donations"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Donations
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>

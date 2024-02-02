@@ -41,7 +41,7 @@ const page = () => {
           {isSmallScreen ? (
             <div>
               <Image src={heroImgMobile} width="100%" className="mt-[6%]" />
-              <div className="mt-[1%] pb-[15%] flex justify-start items-start">
+              <div className="mt-[1%] pb-[15%] flex justify-end items-end">
                 <Image src={shield} width="120%" className="mt-[3px]" />
                 <div className="text-right">
                   <h1 className="text-[16px] font-bold text-[#6A00C6] ">
