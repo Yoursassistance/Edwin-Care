@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Sora:wght@100..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../public/Fonts/Helvetica.ttf') format('ttf'),
+         url('../../public/Fonts/Helvetica-Bold.ttf') format('ttf');
+    /* Add additional file formats if necessary (TTF, OTF, etc.) */
+    font-weight: normal;
+    font-style: normal;
+  }
+
 *{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Helvetica", sans-serif;
 }
