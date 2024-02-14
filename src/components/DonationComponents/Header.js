@@ -41,6 +41,15 @@ const Header = () => {
               <Image width={60} src={logoB} />
             </div>
             <div className="flex items-end justify-end w-[50%]">
+            <div className="flex items-center w-[70%]">
+                <Image src={phone} width="100%" />
+                <a
+                  href="tel:0455733143"
+                  className="text-[#979797] text-[16px] ml-[3%]"
+                >
+                  0455 733 143
+                </a>
+              </div>
               <div>
                 <Image onClick={handleClick} className="menu" src={menu} />
 

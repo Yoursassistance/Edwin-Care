@@ -7,11 +7,9 @@ import Link from "next/link";
 import menu from "../../../public/Assets/Svg/menu.svg";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,51 +41,57 @@ const Header = () => {
               <Image width={60} src={logoB} />
             </div>
             <div className="flex items-end justify-end w-[50%]">
+              <div className="flex items-center w-[70%]">
+                <Image src={phone} width="100%" />
+                <a
+                  href="tel:0455733143"
+                  className="text-[#979797] text-[16px] ml-[3%]"
+                >
+                  0455 733 143
+                </a>
+              </div>
               <div>
                 <Image onClick={handleClick} className="menu" src={menu} />
 
                 {isDropdownVisible && (
-                <div
-                  id="dropDown"
-                  className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col absolute shadow-lg rounded-[10px] flex"
-                >
-                  <Link
-                    href="/"
-                    className="mr-[2%] text-[#979797] my-[3%]"
+                  <div
+                    id="dropDown"
+                    className=" bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col absolute shadow-lg rounded-[10px] flex"
                   >
-                    Home
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    href="/ndis-information"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    NDIS Information
-                  </Link>
-                  <Link
-                    href="/referrals"
-                    className="mr-[2%] font-bold text-[#6A00C6] text-[16px] my-[3%]"
-                  >
-                    Referrals
-                  </Link>
-                  <Link
-                    href="/donations"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Donations
-                  </Link>
-                </div>
+                    <Link href="/" className="mr-[2%] text-[#979797] my-[3%]">
+                      Home
+                    </Link>
+                    <Link
+                      href="/about"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href="/services"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Services
+                    </Link>
+                    <Link
+                      href="/ndis-information"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      NDIS Information
+                    </Link>
+                    <Link
+                      href="/referrals"
+                      className="mr-[2%] font-bold text-[#6A00C6] text-[16px] my-[3%]"
+                    >
+                      Referrals
+                    </Link>
+                    <Link
+                      href="/donations"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Donations
+                    </Link>
+                  </div>
                 )}
               </div>
             </div>
@@ -138,7 +142,7 @@ const Header = () => {
               </h1>
             </div>
             <div className="w-[50%]">
-            <Link href="#section1">
+              <Link href="#section1">
                 <ScrollLink to="section1" smooth={true} duration={3000}>
                   <button className="bg-[#6A00C6] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">
                     Get in touch
