@@ -11,7 +11,6 @@ const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
-
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 768);
@@ -46,47 +45,47 @@ const Header = () => {
                 <Image onClick={handleClick} className="menu" src={menu} />
 
                 {isDropdownVisible && (
-                <div
-                  id="dropDown"
-                  className=" bg-white p-[4%] w-[48%] mt-[10%] ml-[-39%] flex-col absolute shadow-lg rounded-[10px] flex"
-                >
-                  <Link
-                    href="/"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                  <div
+                    id="dropDown"
+                    className=" bg-white p-[4%] w-[48%] mt-[10%] ml-[-39%] flex-col absolute shadow-lg rounded-[10px] flex"
                   >
-                    Home
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    href="/ndis-information"
-                    className="mr-[2%] font-bold text-[#F42BD3] my-[3%]"
-                  >
-                    NDIS Information
-                  </Link>
-                  <Link
-                    href="/referrals"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Referrals
-                  </Link>
-                  <Link
-                    href="/donations"
-                    className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                  >
-                    Donations
-                  </Link>
-                </div>
+                    <Link
+                      href="/"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      href="/about"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href="/services"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Services
+                    </Link>
+                    <Link
+                      href="/ndis-information"
+                      className="mr-[2%] font-bold text-[#F42BD3] my-[3%]"
+                    >
+                      NDIS Information
+                    </Link>
+                    <Link
+                      href="/referrals"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Referrals
+                    </Link>
+                    <Link
+                      href="/donations"
+                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                    >
+                      Donations
+                    </Link>
+                  </div>
                 )}
               </div>
             </div>
@@ -140,13 +139,13 @@ const Header = () => {
               </a>
             </div>
             <div className="w-[40%]">
-              <button className="bg-[#F42BD3] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">
-                <Link href="#section1">
-                  <ScrollLink to="section1" smooth={true} duration={3000}>
+              <Link href="#section1">
+                <ScrollLink to="section1" smooth={true} duration={3000}>
+                  <button className="bg-[#F42BD3] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">
                     Get in touch
-                  </ScrollLink>
-                </Link>
-              </button>
+                  </button>
+                </ScrollLink>
+              </Link>
             </div>
           </div>
         </div>

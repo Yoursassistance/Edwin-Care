@@ -139,13 +139,13 @@ const Header = () => {
               </a>
             </div>
             <div className="w-[40%]">
-              <button className="bg-[#ffffff] text-[#000000] px-[20%] py-[7%] rounded-[5px]">
-                <Link href="#section1">
-                  <ScrollLink to="section1" smooth={true} duration={3000}>
+              <Link href="#section1">
+                <ScrollLink to="section1" smooth={true} duration={3000}>
+                  <button className="bg-[#ffffff] text-[#000000] px-[20%] py-[7%] rounded-[5px]">
                     Get in touch
-                  </ScrollLink>
-                </Link>
-              </button>
+                  </button>
+                </ScrollLink>
+              </Link>
             </div>
           </div>
         </div>

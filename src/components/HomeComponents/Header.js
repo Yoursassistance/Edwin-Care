@@ -31,7 +31,6 @@ const Header = () => {
   const handleClick = () => {
     setIsDropdownVisible(!isDropdownVisible);
   };
-  
 
   return (
     <div>
@@ -41,54 +40,63 @@ const Header = () => {
             <div className="w-[30%]">
               <Image width={60} src={logoB} />
             </div>
+
             <div className="flex items-end justify-end w-[50%]">
+              <div className="flex items-center w-[70%]">
+                <Image src={phone} width="100%" />
+                <a
+                  href="tel:0455733143"
+                  className="text-[#979797] text-[16px] ml-[3%]"
+                >
+                  0455 733 143
+                </a>
+              </div>
               <div>
                 <Image onClick={handleClick} className="menu" src={menu} />
                 <div>
-                
-                {isDropdownVisible && (
-                  <div
-                    id="dropDown"
-                    className="bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col flex absolute shadow-lg rounded-[10px]"
-                  >
-                    <Link
-                      href="/"
-                      className="mr-[2%] font-bold text-[#45CD81] my-[3%]"
+                  {isDropdownVisible && (
+                    <div
+                      id="dropDown"
+                      className="bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col flex absolute shadow-lg rounded-[10px]"
                     >
-                      Home
-                    </Link>
-                    <Link
-                      href="/about"
-                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                    >
-                      About
-                    </Link>
-                    <Link
-                      href="/services"
-                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                    >
-                      Services
-                    </Link>
-                    <Link
-                      href="/ndis-information"
-                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                    >
-                      NDIS Information
-                    </Link>
-                    <Link
-                      href="/referrals"
-                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                    >
-                      Referrals
-                    </Link>
-                    <Link
-                      href="/donations"
-                      className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
-                    >
-                      Donations
-                    </Link>
-                  </div>
-                )}
+                      <Link
+                        href="/"
+                        className="mr-[2%] font-bold text-[#45CD81] my-[3%]"
+                      >
+                        Home
+                      </Link>
+                      <Link
+                        href="/about"
+                        className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                      >
+                        About
+                      </Link>
+                      <Link
+                        href="/services"
+                        className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                      >
+                        Services
+                      </Link>
+                      <Link
+                        href="/ndis-information"
+                        className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                      >
+                        NDIS Information
+                      </Link>
+                      <Link
+                        href="/referrals"
+                        className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                      >
+                        Referrals
+                      </Link>
+                      <Link
+                        href="/donations"
+                        className="mr-[2%] text-[#979797] text-[14px] my-[3%]"
+                      >
+                        Donations
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -145,13 +153,13 @@ const Header = () => {
             </div>
 
             <div className="w-[40%]">
-              <button className="bg-[#45CD81] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">
-                <Link href="#section1">
-                  <ScrollLink to="section1" smooth={true} duration={3000}>
+              <Link href="#section1">
+                <ScrollLink to="section1" smooth={true} duration={3000}>
+                  <button className="bg-[#45CD81] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">
                     Get in touch
-                  </ScrollLink>
-                </Link>
-              </button>
+                  </button>
+                </ScrollLink>
+              </Link>
             </div>
           </div>
         </div>

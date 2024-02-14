@@ -5,6 +5,8 @@ import logoB from "../../../public/Assets/Svg/logoB.svg";
 import phone from "../../../public/Assets/Svg/phoneG.svg";
 import Link from "next/link";
 import menu from "../../../public/Assets/Svg/menu.svg";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -136,9 +138,13 @@ const Header = () => {
               </h1>
             </div>
             <div className="w-[50%]">
-              <button className="bg-[#6A00C6] text-[#ffffff] px-[20%] py-[10%] rounded-[5px]">
-                Get in touch
-              </button>
+            <Link href="#section1">
+                <ScrollLink to="section1" smooth={true} duration={3000}>
+                  <button className="bg-[#6A00C6] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">
+                    Get in touch
+                  </button>
+                </ScrollLink>
+              </Link>
             </div>
           </div>
         </div>

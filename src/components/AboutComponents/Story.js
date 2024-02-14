@@ -89,7 +89,7 @@ const Story = () => {
 
       <div className="mt-[5%]">
         <h1 className="text-[40px] font-bold max-[768px]:text-[28px]">What we do</h1>
-        <div className="flex flex-wrap items-center justify-around max-[768px]:leading-[10px]">
+        <div className="flex flex-wrap items-center justify-around max-[768px]:leading-[15px]">
           <div className="bg-[white] rounded-[10px] px-[3%] py-[2%] flex items-center justify-center w-[26%] mt-[3%] max-[768px]:w-[49%] max-[768px]:py-[5%] max-[768px]:my-[5%]">
             <Image className="max-[768px]:w-[20%] max-[768px]mr-[5%]" src={serviceHome} />
             <h1 className="ml-[2%] font-bold flex-1 text-[18px] max-[768px]:text-[12px]">

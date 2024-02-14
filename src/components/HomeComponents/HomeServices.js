@@ -5,6 +5,7 @@ import serviceHeart from "../../../public/Assets/Svg/serviceHeart.svg";
 import serviceCommunity from "../../../public/Assets/Svg/serviceCommunity.svg";
 import serviceWorld from "../../../public/Assets/Svg/serviceWorld.svg";
 import arrowRight from "../../../public/Assets/Svg/arrowRight.svg";
+import Link from "next/link";
 
 const HomeServices = () => {
   return (
@@ -18,79 +19,97 @@ const HomeServices = () => {
             </h1>
           </div>
           <div className="flex justify-end flex-col">
-            <button className="w-[200px] h-[60px] text-white rounded-[5px] bg-[#0B69FF] max-[768px]:mt-[5%] max-[768px]:w-[170px] max-[768px]:h-[50px]">
-              See all service
-            </button>
+            <Link href="/services">
+              <button className="w-[200px] h-[60px] text-white rounded-[5px] bg-[#0B69FF] max-[768px]:mt-[5%] max-[768px]:w-[170px] max-[768px]:h-[50px]">
+                See all service
+              </button>
+            </Link>
           </div>
         </div>
 
         <div className="flex flex-wrap justify-between max-[768px]:flex-col max-[768px]:flex-no-wrap">
-          <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]" >
-            <div className="w-[15%] mr-[2%] max-[768px]:w-[15%]">
-              <Image src={serviceHome} width="100%" />
+          <Link href="/services">
+            <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]">
+              <div className="w-[10%] mr-[2%] max-[768px]:w-[15%]">
+                <Image src={serviceHome} width={35} />
+              </div>
+              <div className="pb-[5%] w-[100%] max-[768px]:-[65%]">
+                <h1 className="text-[26px] font-bold max-[768px]:text-[18px]">
+                  In-Home Support
+                </h1>
+                <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
+                  Our In-Home Support services are designed to empower
+                  individuals with disabilities, fostering independence within
+                  the comfort of their homes.
+                </p>
+              </div>
+              <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[20%]">
+                <Image src={arrowRight} width={35} />
+              </div>
             </div>
-            <div className="pb-[5%] w-[70%] max-[768px]:-[65%]">
-              <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">In-Home Support</h1>
-              <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
-                Our In-Home Support services are designed to empower individuals
-                with disabilities, fostering independence within the comfort of
-                their homes.
-              </p>
-            </div>
-            <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[20%]">
-              <Image src={arrowRight} width="100%" />
-            </div>
-          </div>
+          </Link>
 
-          <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]">
-            <div className="w-[15%] mr-[2%] max-[768px]:w-[15%]">
-              <Image src={serviceCommunity} width="100%" />
+          <Link href="/services">
+            <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]">
+              <div className="w-[10%] mr-[2%] max-[768px]:w-[15%]">
+                <Image src={serviceCommunity} width={35} />
+              </div>
+              <div className="pb-[5%] w-[100%] max-[768px]:-[65%]">
+                <h1 className="text-[26px] font-bold max-[768px]:text-[18px]">
+                  Community Participation
+                </h1>
+                <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
+                  Engage, connect, and thrive through meaningful Community
+                  Participation initiatives that celebrate diversity and
+                  inclusivity.
+                </p>
+              </div>
+              <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[20%]">
+                <Image src={arrowRight} width={35} />
+              </div>
             </div>
-            <div className="pb-[5%] w-[70%] max-[768px]:-[65%]">
-              <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">Community Participation</h1>
-              <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
-                Engage, connect, and thrive through meaningful Community
-                Participation initiatives that celebrate diversity and
-                inclusivity.
-              </p>
-            </div>
-            <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[20%]">
-              <Image src={arrowRight} width="100%" />
-            </div>
-          </div>
+          </Link>
 
-          <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]">
-            <div className="w-[15%] mr-[2%] max-[768px]:w-[15%]">
-              <Image src={serviceWorld} width="100%" />
+          <Link href="/services">
+            <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]">
+              <div className="w-[10%] mr-[2%] max-[768px]:w-[15%]">
+                <Image src={serviceWorld} width={35} />
+              </div>
+              <div className="pb-[5%] w-[100%] max-[768px]:-[65%]">
+                <h1 className="text-[26px] font-bold max-[768px]:text-[18px]">
+                  Assistance with Travel and Transport
+                </h1>
+                <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
+                  Explore the world with confidence, knowing our Travel and
+                  Transport assistance is here to support you every step of the
+                  way.
+                </p>
+              </div>
+              <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[20%]">
+                <Image src={arrowRight} width={35} />
+              </div>
             </div>
-            <div className="pb-[5%] w-[70%] max-[768px]:-[65%]">
-              <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">Assistance with Travel and Transport</h1>
-              <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
-                Explore the world with confidence, knowing our Travel and
-                Transport assistance is here to support your every step of the
-                way.
-              </p>
-            </div>
-            <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[20%]">
-              <Image src={arrowRight} width="100%" />
-            </div>
-          </div>
+          </Link>
 
-          <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%">
-            <div className="w-[15%] mr-[2%] max-[768px]:w-[15%]">
-              <Image src={serviceHeart} width="100%" />
+          <Link href="/services">
+            <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%">
+              <div className="w-[10%] mr-[2%] max-[768px]:w-[15%]">
+                <Image src={serviceHeart} width={35} />
+              </div>
+              <div className="pb-[5%] w-[100%] max-[768px]:-[65%]">
+                <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">
+                  Allied Health
+                </h1>
+                <p className="w-[90%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
+                  Elevate your well-being with our comprehensive Allied Health
+                  services, where expertise meets personalized care.
+                </p>
+              </div>
+              <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[20%]">
+                <Image src={arrowRight} width={35} />
+              </div>
             </div>
-            <div className="pb-[5%] w-[70%] max-[768px]:-[65%]">
-              <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">Allied Health</h1>
-              <p className="w-[90%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]"> 
-                Elevate your well-being with our comprehensive Allied Health
-                services, where expertise meets personalized care.
-              </p>
-            </div>
-            <div className="flex flex-col justify-end items-end w-[15%] max-[768px]:w-[20%]">
-              <Image src={arrowRight} width="100%" />
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

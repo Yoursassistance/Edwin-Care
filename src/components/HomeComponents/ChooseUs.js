@@ -10,6 +10,8 @@ import fstar from "../../../public/Assets/Svg/fstar.svg";
 import chooseUs from "../../../public/Assets/Images/chooseUs.png";
 import plansImg from "../../../public/Assets/Images/plansImg.png";
 import testi from "../../../public/Assets/Images/texti.png";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Link from "next/link";
 
 const ChooseUs = () => {
   return (
@@ -21,7 +23,7 @@ const ChooseUs = () => {
           </div>
 
           <div>
-            <h1 className="text-[40px] text-[#6A00C6] font-bold max-[768px]:mt-[5%] max-[768px]:text-[28px]">
+            <h1 className="text-[40px] text-[#6A00C6] font-bold max-[768px]:mt-[5%] max-[768px]:text-[24px]">
               Why Choose Us?
             </h1>
             <div>
@@ -59,7 +61,7 @@ const ChooseUs = () => {
         </div>
 
         <div className="px-[13%] mt-[5%] max-[768px]:px-[0] text-center">
-          <h1 className="text-[40px] font-bold max-[768px]:text-[28px]">
+          <h1 className="text-[40px] font-bold max-[768px]:text-[24px]">
             Wellness, Compassion, Quality
           </h1>
           <h1 className="text-[20px] w-[100%] my-[1%] max-[768px]:text-[16px] max-[768px]:w-[100%] max-[768px]:py-[5%]">
@@ -67,15 +69,19 @@ const ChooseUs = () => {
             focus on Wellness, delivered with genuine Compassion and
             uncompromising Quality.
           </h1>
-          <button className="bg-[#6A00C6] text-[white] w-[20%] h-[60px] rounded-[5px] max-[768px]:w-[60%]">
-            Get in Touch
-          </button>
+          <Link href="#section1">
+            <ScrollLink to="section1" smooth={true} duration={3000}>
+              <button className="bg-[#6A00C6] text-[white] w-[20%] h-[60px] rounded-[5px] max-[768px]:w-[60%] max-[768px]:h-[50px]">
+                Get in Touch
+              </button>
+            </ScrollLink>
+          </Link>
         </div>
       </div>
 
       <div className="py-[5%] px-[19%] text-center bg-[#F8F9FE] max-[768px]:px-[8%]">
         <div className="mb-[5%]">
-          <h1 className="text-[40px] font-bold max-[768px]:text-[28px]">
+          <h1 className="text-[40px] font-bold max-[768px]:text-[24px]">
             Health Checkup Plans
           </h1>
           <h1 className="mt-[2%]">
@@ -99,7 +105,7 @@ const ChooseUs = () => {
 
         <div className="flex text-left items-center mt-[8%] max-[768px]:flex-col">
           <div>
-            <Image src={logoIcon} />
+            <Image width={40} src={logoIcon} />
             <h1 className="text-[32px] mt-[2%] font-bold max-[768px]:text-[22px]">
               Health Checkup
             </h1>
@@ -125,9 +131,13 @@ const ChooseUs = () => {
               <h1 className="ml-[2%]">Physical Therapy (PT) (PBS)</h1>
             </div>
             <div className="mt-[5%]">
-              <buuton className="h-[60px] py-[2%] font-semibold bg-[#FDE101] px-[5%] rounded-[5px]">
-                Get in touch
-              </buuton>
+              <Link href="#section1">
+                <ScrollLink to="section1" smooth={true} duration={3000}>
+                  <buuton className="h-[60px] py-[3%] font-semibold bg-[#FDE101] px-[5%] rounded-[5px]">
+                    Get in touch
+                  </buuton>
+                </ScrollLink>
+              </Link>
             </div>
           </div>
           <div className="max-[768px]:mt-[5%]">

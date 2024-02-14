@@ -77,7 +77,7 @@ const page = () => {
 
       <div className="px-[8%] py-[5%] text-[#6A00C6]">
         <div>
-          <h1 className="text-[38px] font-bold max-[768px]:text-[28px]">
+          <h1 className="text-[38px] font-bold max-[768px]:text-[22px]">
             Welcome to NDIS Information Hub
           </h1>
           <div>

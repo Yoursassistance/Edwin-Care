@@ -21,20 +21,21 @@ const Footer = () => {
             <h1 className="ml-[2%] text-[20px]">Edwin Care</h1>
           </div>
 
-          <div className="flex my-[4%] items-center border-[1px] border-[white] py-[8%] px-[5%] rounded-[10px] max-[768px]:w-[70%]">
-            <Image src={go} width="100%" />
-            <h1 className="text-[18px] font-bold ml-[3%] max-[768px]:text-[14px]">
-              <Link href="#section1">
-                <ScrollLink to="section1" smooth={true} duration={3000}>
+          <Link href="#section1">
+            <ScrollLink to="section1" smooth={true} duration={3000}>
+              <div className="flex my-[4%] items-center border-[1px] border-[white] py-[6%] px-[5%] rounded-[10px] max-[768px]:w-[70%]">
+                <Image src={go} width="100%" />
+                <h1 className="text-[18px] font-bold ml-[3%] max-[768px]:text-[14px]">
                   Get in touch
-                </ScrollLink>
-              </Link>
-            </h1>
-          </div>
-          <div className="flex my-[4%] items-center border-[1px] border-[white] py-[8%] px-[5%] rounded-[10px] max-[768px]:w-[70%]">
+                </h1>
+              </div>
+            </ScrollLink>
+          </Link>
+          
+          <div className="flex my-[4%] items-center border-[1px] border-[white] py-[6%] px-[5%] rounded-[10px] max-[768px]:w-[70%]">
             <Image src={whatsappF} />
             <a
-              href="https://wa.me/0455733143"
+              href="https://wa.link/v8f0pa"
               className="text-[18px] font-bold ml-[3%] max-[768px]:text-[14px]"
             >
               Connect on Whatsapp
@@ -49,17 +50,35 @@ const Footer = () => {
         </div>
         <div className="max-[768px]:my-[5%]">
           <h1 className="text-[20px] font-bold">Services</h1>
-          <h1 className="my-[2%]">In-Home support</h1>
-          <h1 className="my-[2%]">Community participation</h1>
-          <h1 className="my-[2%]">Assist with travel and transport</h1>
-          <h1 className="my-[2%]">Development of life skills</h1>
-          <h1 className="my-[2%]">Allied Health</h1>
-          <h1 className="my-[2%]">
-            Assistance with social and community participation
-          </h1>
-          <h1 className="my-[2%]">Youth Support</h1>
-          <h1 className="my-[2%]">Accommodation Assistance</h1>
-          <h1 className="my-[2%]">Cleaning service</h1>
+          <Link href="/services">
+            <h1 className="my-[2%]">In-Home support</h1>
+          </Link>
+          <Link href="/services">
+            <h1 className="my-[2%]">Community participation</h1>
+          </Link>
+          <Link href="/services">
+            <h1 className="my-[2%]">Assist with travel and transport</h1>
+          </Link>
+          <Link href="/services">
+            <h1 className="my-[2%]">Development of life skills</h1>
+          </Link>
+          <Link href="/services">
+            <h1 className="my-[2%]">Allied Health</h1>
+          </Link>
+          <Link href="/services">
+            <h1 className="my-[2%]">
+              Assistance with social and community participation
+            </h1>
+          </Link>
+          <Link href="/services">
+            <h1 className="my-[2%]">Youth Support</h1>
+          </Link>
+          <Link href="/services">
+            <h1 className="my-[2%]">Accommodation Assistance</h1>
+          </Link>
+          <Link href="/services">
+            <h1 className="my-[2%]">Cleaning service</h1>
+          </Link>
         </div>
 
         <div className="max-[768px]:my-[5%]">
