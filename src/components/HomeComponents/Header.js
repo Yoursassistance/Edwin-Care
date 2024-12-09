@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import logoB from "../../../public/Assets/Svg/logoB.svg";
+import logoBlue from "../../../public/Assets/Svg/logoBlue.svg";
 import phone from "../../../public/Assets/Svg/phoneG.svg";
 import Link from "next/link";
 import menu from "../../../public/Assets/Svg/menu.svg";
@@ -38,7 +39,7 @@ const Header = () => {
         <div className="pt-[5%]">
           <div className="flex px-[2%] py-[5%] items-center bg-white mx-[4%] shadow-lg justify-between relative">
             <div className="w-[30%]">
-              <Image width={60} src={logoB} />
+              <Image width={60} src={logoBlue} />
             </div>
 
             <div className="flex items-end justify-end w-[50%]">
