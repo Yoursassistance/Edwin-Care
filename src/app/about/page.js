@@ -40,9 +40,9 @@ const page = () => {
         <div className="px-[13%] max-[768px]:px-[4%]">
           {isSmallScreen ? (
             <div>
-              <Image src={heroImgMobile} width="100%" className="mt-[6%]" />
-              <div className="mt-[1%] pb-[15%] flex justify-end items-end">
-                <Image src={shield} width="120%" className="mt-[3px]" />
+              <Image alt="hero" src={heroImgMobile} width="100%" className="mt-[6%]" />
+              <div className="mt-[1%] pb-[15%] flex justify-end items-start">
+                <Image alt="shield" src={shield} width="120%" className="mt-[3px]" />
                 <div className="text-right">
                   <h1 className="text-[16px] font-bold text-[#6A00C6] ">
                     Registered NDIS provider
@@ -54,7 +54,7 @@ const page = () => {
           ) : (
             <div>
               <div className="ml-[26%] mt-[6%] mb-[-9%] flex justify-start items-start">
-                <Image src={shield} width="120%" className="mt-[3px]" />
+                <Image alt="shield" src={shield} width="120%" className="mt-[3px]" />
                 <div>
                   <h1 className="text-[18px] font-bold text-[#6A00C6]">
                     Registered NDIS provider
@@ -63,19 +63,19 @@ const page = () => {
                 </div>
               </div>
               <div className="bg-white p-[1%] w-max mb-[-2%] mt-[9%] ml-[67%] flex absolute shadow-lg">
-                <Image src={humanLove} width="10%" className="mr-[5%]" />
+                <Image alt="humanLove" src={humanLove} width="10%" className="mr-[5%]" />
                 <div className="w-fit">
                   <h1 className="font-[600] w-fit">More than 500+</h1>
                   <p className="font-[600] w-max">active participant</p>
                 </div>
               </div>
-              <Image src={heroImg} width="100%" className="mt-[4%]" />
+              <Image alt="hero" src={heroImg} width="100%" className="mt-[4%]" />
             </div>
           )}
         </div>
       </div>
 
-      <div className="px-[8%] py-[5%]">
+      <div className="px-[8%] py-[5%] max-[768px]:px-[4%]">
         <div>
           <h1 className="text-[42px] font-bold max-[768px]:text-[28px]">
             About us

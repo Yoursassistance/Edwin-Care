@@ -20,9 +20,7 @@ const ServiceTop = () => {
           </div>
           <div className="flex items-center max-[768px]:hidden">
             <Image src={email} width="100%" className="mr-[2%]" />
-            <a href="mailto:info@edwinservices.com.au">
-              info@edwinservices.com.au
-            </a>
+            <a href="mailto:admin@edwinservices.org">admin@edwinservices.org</a>
           </div>
         </div>
         <div className="flex w-[30%] items-end max-[768px]:w-[100%]">

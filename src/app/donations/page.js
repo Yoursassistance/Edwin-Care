@@ -36,15 +36,25 @@ const page = () => {
 
   return (
     <div className="w-[100%] bg-[#F8F9FE]">
-      <div className="bg-[#F9F7E5] h-[100vh] max-[768px]:h-[auto]">
+      <div className="bg-[#F9F7E5] h-[80vh] max-[768px]:h-[auto]">
         <HomeTop />
         <Header />
         <div className="px-[13%] max-[768px]:px-[4%]">
           {isSmallScreen ? (
             <div>
-              <Image src={heroImgMobile} width="100%" className="mt-[6%]" />
+              <Image
+                alt="hero"
+                src={heroImgMobile}
+                width="100%"
+                className="mt-[6%]"
+              />
               <div className="mt-[1%] pb-[15%] flex justify-start items-start">
-                <Image src={shield} width="120%" className="mt-[3px]" />
+                <Image
+                  alt="shield"
+                  src={shield}
+                  width="120%"
+                  className="mt-[3px]"
+                />
                 <div>
                   <h1 className="text-[16px] font-bold text-[#6A00C6] ">
                     Registered NDIS provider
@@ -56,7 +66,12 @@ const page = () => {
           ) : (
             <div>
               <div className="ml-[50%] mt-[6%] mb-[-11%] flex justify-start items-start">
-                <Image src={shield} width="120%" className="mt-[3px]" />
+                <Image
+                  alt="shield"
+                  src={shield}
+                  width="120%"
+                  className="mt-[3px]"
+                />
                 <div>
                   <h1 className="text-[1.2em] font-bold text-[#6A00C6] ">
                     Registered NDIS provider
@@ -65,23 +80,33 @@ const page = () => {
                 </div>
               </div>
               <div className="bg-white p-[1%] w-[12%] mb-[-2%] mt-[11%] ml-[-5%] flex absolute shadow-lg">
-                <Image src={humanLove} width="10%" className="mr-[5%]" />
+                <Image
+                  alt="humanLove"
+                  src={humanLove}
+                  width="10%"
+                  className="mr-[5%]"
+                />
                 <div className="w-fit">
                   <h1 className="font-[600]">More than 500+</h1>
                   <p className="font-[600]">active participant</p>
                 </div>
               </div>
-              <Image src={heroImg} width="100%" className="mt-[6%]" />
+              <Image
+                alt="hero"
+                src={heroImg}
+                width="100%"
+                className="mt-[6%]"
+              />
             </div>
           )}
         </div>
       </div>
       <WhyDonate />
 
-      <div className="bg-white flex mx-[15%] my-[3%] p-[3%] rounded-[20px] max-[768px]:flex-col max-[768px]:mx-[4%] max-[768px]:my-[2%] max-[768px]:p-[2%] max-[768px]:rounded-[10px]">
+      <div className="bg-white flex mx-[15%] my-[3%] p-[3%] rounded-[20px] max-[768px]:flex-col max-[768px]:mx-[2%] max-[768px]:my-[2%] max-[768px]:p-[2%] max-[768px]:rounded-[10px]">
         {isSmallScreen ? (
           <div>
-            <Image src={donateImgM} />
+            <Image alt="donateImgM" src={donateImgM} />
           </div>
         ) : (
           <div
@@ -98,7 +123,7 @@ const page = () => {
 
         <div className="flex-[1.3] ">
           <div className="flex items-center max-[768px]:mt-[3%]">
-            <Image src={logo} width={40} />
+            <Image alt="logo" src={logo} width={40} />
             <h1 className="text-[24px] font-semibold max-[768px]:text-[20px]">
               Edwin Care Support Service
             </h1>
@@ -195,7 +220,7 @@ const page = () => {
             </p>
           </div>
 
-          <div>
+          <div className="ml-4">
             <h1 className="text-[#6A00C6] text-[28px] font-semibold max-[768px]:text-[20px]">
               Equipment:
             </h1>
@@ -239,14 +264,24 @@ const page = () => {
             <p className="max-[768px]:text-[14px]">Talk to us</p>
           </div>
           <div className="w-[30%] max-[768px]:w-[100%] max-[768px]:my-[3%]">
-            <button className="p-[3%] text-[white] bg-[#E58A7B] border-[1px] w-[100%] rounded-[5px] border-[white]">
-              Send an Email
-            </button>
+            <a
+              href="mailto:admin@edwinservices.org"
+              className="text-[#979797] text-[13px] ml-[3%] md:text-[16px]"
+            >
+              <button className="p-[3%] text-[white] bg-[#E58A7B] border-[1px] w-[100%] rounded-[5px] border-[white]">
+                Send an Email
+              </button>
+            </a>
           </div>
           <div className="w-[30%] max-[768px]:w-[100%]">
-            <button className="p-[3%] bg-[white] w-[100%] rounded-[5px]">
-              Call Us
-            </button>
+            <a
+              href="tel:+61416617927"
+              className="text-[#979797] text-[13px] ml-[3%] md:text-[16px]"
+            >
+              <button className="p-[3%] bg-[white] w-[100%] rounded-[5px]">
+                Call Us
+              </button>
+            </a>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ import Link from "next/link";
 
 const AboutService = () => {
   return (
-    <div className="px-[15%] bg-[#FAEF99] py-[5%] max-[768px]:px-[8%]">
+    <div className="px-[15%] bg-[#FAEF99] py-[5%] max-[768px]:px-[4%]">
       <div className="my-[3%]">
         <h1 className="text-[42px] font-bold max-[768px]:text-[28px]">
           Our Story
@@ -38,7 +38,7 @@ const AboutService = () => {
       </div>
 
       <div className="flex flex-wrap justify-left items-center text-[white] max-[768px]:flex-no-wrap max-[768px]:flex-col">
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service1} />
@@ -52,7 +52,7 @@ const AboutService = () => {
           </Link>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service2} />
@@ -66,7 +66,7 @@ const AboutService = () => {
           </Link>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service3} />
@@ -80,7 +80,7 @@ const AboutService = () => {
           </Link>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service4} />
@@ -94,7 +94,7 @@ const AboutService = () => {
           </Link>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service5} />
@@ -106,7 +106,7 @@ const AboutService = () => {
           </Link>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service6} />
@@ -118,7 +118,7 @@ const AboutService = () => {
           </Link>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service7} />
@@ -132,7 +132,7 @@ const AboutService = () => {
           </Link>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service8} />
@@ -144,7 +144,7 @@ const AboutService = () => {
           </Link>
         </div>
 
-        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%]">
+        <div className="w-[45%] mx-[2%] my-[2%] max-[768px]:w-[100%] max-[768px]:mx-[0]">
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
               <Image src={service9} />

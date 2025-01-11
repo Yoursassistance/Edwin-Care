@@ -42,9 +42,9 @@ const page = () => {
         <div className="px-[13%] max-[768px]:px-[4%]">
           {isSmallScreen ? (
             <div>
-              <Image src={heroImgMobile} width="100%" className="mt-[6%]" />
+              <Image alt="hero" src={heroImgMobile} width="100%" className="mt-[6%]" />
               <div className="mt-[1%] pb-[15%] flex justify-start items-start">
-                <Image src={shield} width="120%" className="mt-[3px]" />
+                <Image alt="shield" src={shield} width="120%" className="mt-[3px]" />
                 <div>
                   <h1 className="text-[16px] font-bold text-[#6A00C6] ">
                     Registered NDIS provider
@@ -56,7 +56,7 @@ const page = () => {
           ) : (
             <div>
               <div className="ml-[50%] mt-[6%] mb-[-11%] flex justify-start items-start">
-                <Image src={shield} width="120%" className="mt-[3px]" />
+                <Image alt="shield" src={shield} width="120%" className="mt-[3px]" />
                 <div>
                   <h1 className="text-[18px] font-bold text-[#6A00C6] ">
                     Registered NDIS provider
@@ -65,13 +65,13 @@ const page = () => {
                 </div>
               </div>
               <div className="bg-white p-[1%] w-max mb-[-2%] mt-[11%] ml-[-5%] flex absolute shadow-lg">
-                <Image src={humanLove} width="10%" className="mr-[5%]" />
+                <Image alt="humanLove" src={humanLove} width="10%" className="mr-[5%]" />
                 <div className="w-[100%]">
                   <h1 className="font-[600] w-fit">More than 500+</h1>
                   <p className="font-[600] w-max">active participant</p>
                 </div>
               </div>
-              <Image src={heroImg} width="100%" className="mt-[6%]" />
+              <Image alt="hero" src={heroImg} width="100%" className="mt-[6%]" />
             </div>
           )}
         </div>

@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[#E58A7B] px-[8%] py-[5%] text-[white] max-[768px]:py-[10%]">
+    <div className="bg-[#E58A7B] px-[8%] py-[5%] text-[white] max-[768px]:py-[10%] max-[768px]:px-[4%]">
       <div className=" flex justify-between max-[768px]:flex-col ">
         <div className="w-[20%] max-[768px]:w-[100%]">
           <div className="flex items-center my-[2%]">
@@ -23,7 +23,7 @@ const Footer = () => {
 
           <Link href="#section1">
             <ScrollLink to="section1" smooth={true} duration={3000}>
-              <div className="flex my-[4%] items-center border-[1px] border-[white] py-[6%] px-[5%] rounded-[10px] max-[768px]:w-[70%]">
+              <div className="flex my-[4%] items-center border-[1px] border-[white] py-[6%] px-[5%] rounded-[10px] max-[768px]:w-[100%]">
                 <Image src={go} width="100%" />
                 <h1 className="text-[18px] font-bold ml-[3%] max-[768px]:text-[14px]">
                   Get in touch
@@ -32,7 +32,7 @@ const Footer = () => {
             </ScrollLink>
           </Link>
           
-          <div className="flex my-[4%] items-center border-[1px] border-[white] py-[6%] px-[5%] rounded-[10px] max-[768px]:w-[70%]">
+          <div className="flex my-[4%] items-center border-[1px] border-[white] py-[6%] px-[5%] rounded-[10px] max-[768px]:w-[100%]">
             <Image src={whatsappF} />
             <a
               href="https://wa.link/v8f0pa"

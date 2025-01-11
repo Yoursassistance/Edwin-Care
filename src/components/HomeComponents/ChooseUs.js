@@ -16,7 +16,7 @@ import Link from "next/link";
 const ChooseUs = () => {
   return (
     <div>
-      <div className="py-[5%] px-[8%] max-[768px]:py-[8%]">
+      <div className="py-[5%] px-[8%] max-[768px]:py-[8%] max-[768px]:px-[4%]">
         <div className="flex justify-center items-center max-[768px]:flex-col">
           <div className="mr-[15%] max-[768px]:mr-[0]">
             <Image src={chooseUs} />
@@ -64,7 +64,7 @@ const ChooseUs = () => {
           <h1 className="text-[40px] font-bold max-[768px]:text-[24px]">
             Wellness, Compassion, Quality
           </h1>
-          <h1 className="text-[20px] w-[100%] my-[1%] max-[768px]:text-[16px] max-[768px]:w-[100%] max-[768px]:py-[5%]">
+          <h1 className="text-[20px] text-[#777777] w-[100%] my-[1%] max-[768px]:text-[16px] max-[768px]:w-[100%] max-[768px]:py-[5%]">
             Your journey to health and happiness begins with our unwavering
             focus on Wellness, delivered with genuine Compassion and
             uncompromising Quality.
@@ -84,13 +84,13 @@ const ChooseUs = () => {
           <h1 className="text-[40px] font-bold max-[768px]:text-[24px]">
             Health Checkup Plans
           </h1>
-          <h1 className="mt-[2%]">
+          <h1 className="mt-[2%] text-[#777777]">
             Embrace a proactive approach to health maintenance with our Health
             Checkup Plans, ensuring a healthier and happier you.
           </h1>
         </div>
         <div>
-          <div className="flex justify-between bg-white py-[2%] mx-[23%] px-[3%] mb-[3%] max-[768px]:mx-[0] max-[768px]:py-[5%]">
+          <div className="flex justify-between bg-white py-[2%] mx-[23%] px-[3%] mb-[3%] max-[768px]:mx-[-5%] max-[768px]:py-[5%]">
             <button className="bg-[#6A00C6] text-[white] h-[60px] px-[3%] rounded-[5px] max-[768px]:text-[13px] max-[768px]:h-[50px]">
               Occupational Therapy
             </button>
@@ -109,7 +109,7 @@ const ChooseUs = () => {
             <h1 className="text-[32px] mt-[2%] font-bold max-[768px]:text-[22px]">
               Health Checkup
             </h1>
-            <h1 className="w-[70%] mt-[2%] leading-[30px]">
+            <h1 className="w-[100%] text-[#777777] mt-[2%] leading-[30px]">
               A wonderful serenity has taken possession of my entire soul, like
               these sweet mornings of spring.
             </h1>
@@ -133,7 +133,7 @@ const ChooseUs = () => {
             <div className="mt-[5%]">
               <Link href="#section1">
                 <ScrollLink to="section1" smooth={true} duration={3000}>
-                  <buuton className="h-[60px] py-[3%] font-semibold bg-[#FDE101] px-[5%] rounded-[5px]">
+                  <buuton className="h-[60px] py-[3%] font-regular bg-[#FDE101] px-[5%] rounded-[5px]">
                     Get in touch
                   </buuton>
                 </ScrollLink>
@@ -146,7 +146,7 @@ const ChooseUs = () => {
         </div>
 
         <div className="flex justify-between items-center mt-[10%]">
-          <div className="w-[10%]">
+          <div className="w-[7%]">
             <Image src={circleLeft} />
           </div>
           <div className="flex w-[80%] justify-between max-[768px]:flex-col max-[768px]:ml-[5%]">
@@ -157,7 +157,7 @@ const ChooseUs = () => {
             <div className="w-[49%] max-[768px]:w-[100%]">
               <Image className="my-[2%] max-[768px]:w-[10%]" src={qutation} />
               <Image className="mb-[2%] max-[768px]:w-[20%]" src={fstar} />
-              <h1 className="text-left text-[20px] max-[768px]:text-[14px]">
+              <h1 className="text-left text-[#777777] text-[20px] max-[768px]:text-[14px]">
                 "As a parent of a child with a disability, I can't express how
                 grateful I am for the valuable insights and support this website
                 provides. It's a safe space to connect with others, share
@@ -170,7 +170,7 @@ const ChooseUs = () => {
               </div>
             </div>
           </div>
-          <div className="w-[10%] flex justify-end">
+          <div className="w-[7%] flex justify-end">
             <Image src={circleRight} />
           </div>
         </div>

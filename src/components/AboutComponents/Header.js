@@ -44,10 +44,10 @@ const Header = () => {
               <div className="flex items-center w-[70%]">
                 <Image src={phone} width="100%" />
                 <a
-                  href="tel:0455733143"
-                  className="text-[#979797] text-[16px] ml-[3%]"
+                  href="tel:+61416617927"
+                  className="text-[#979797] text-[13px] ml-[3%] md:text-[16px]"
                 >
-                  0455 733 143
+                  +614 1661 7927
                 </a>
               </div>
               <div>
@@ -144,10 +144,10 @@ const Header = () => {
             <div className="flex items-center w-[30%]">
               <Image src={phone} width="100%" />
               <a
-                href="tel:0455733143"
+                href="tel:61416617927"
                 className="text-[#979797] text-[16px] ml-[3%]"
               >
-                0455 733 143
+                +614 1661 7927
               </a>
             </div>
             <div className="w-[40%]">

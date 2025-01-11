@@ -1,11 +1,67 @@
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import appEmail from "../../public/Assets/Svg/appEmail.svg";
 import appPhone from "../../public/Assets/Svg/appPhone.svg";
+import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Appointment = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const services = Array.from(form.current.elements)
+      .filter((element) => element.type === "checkbox" && element.checked)
+      .map((element) => element.value)
+      .join(", ");
+
+    // Temporarily append the 'services' field to the form
+    const servicesField = document.createElement("input");
+    servicesField.type = "hidden";
+    servicesField.name = "services";
+    servicesField.value = services;
+    form.current.appendChild(servicesField);
+
+    emailjs
+      .sendForm(
+        "service_bc4wuaw", // Replace with your EmailJS service ID
+        "template_4u2h4aa", // Replace with your EmailJS template ID
+        form.current,
+        "Y25BllYFSc1kAvzil" // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+
+          // Clear input fields
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Failed to send the message, please try again.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+        }
+      )
+      .finally(() => {
+        // Remove the temporary 'services' field
+        form.current.removeChild(servicesField);
+      });
+  };
+
   return (
-    <div id="section1" className="bg-[#EFF5F5] flex px-[15%] py-[5%] justify-center items-center max-[768px]:flex-col max-[768px]:px-[8%]">
+    <div
+      id="section1"
+      className="bg-[#EFF5F5] flex px-[15%] py-[5%] justify-center items-center max-[768px]:flex-col max-[768px]:px-[4%]"
+    >
+     <ToastContainer />
       <div className="w-[40%] max-[768px]:w-[100%] max-[768px]:my-[5%]">
         <h1 className="text-[#0B69FF] font-bold">APPOINTMENT</h1>
         <h1 className="text-[36px] mt-[3%] font-bold max-[768px]:text-[24px] max-[768px]:py-[5%]">
@@ -17,34 +73,38 @@ const Appointment = () => {
         </h1>
         <div className="mt-[2%]">
           <div className="flex my-[4%]">
-            <Image src={appEmail} className="mr-[2%]" />
-            <h1>info@edwinservices.com.au</h1>
+            <Image alt="" src={appEmail} className="mr-[2%]" />
+            <h1>Admin@edwinservices.org</h1>
           </div>
           <div className="flex">
-            <Image src={appPhone} className="mr-[2%]" />
-            <h1>0455 733 143, After hours: 07 3803 2713</h1>
+            <Image alt="" src={appPhone} className="mr-[2%]" />
+            <h1>+614 1661 7927, After hours: 07 3803 2713</h1>
           </div>
         </div>
       </div>
 
-      <div className="bg-white flex flex-col w-[40%] p-[3%] rounded-[20px] ml-[3%] max-[768px]:w-[100%] max-[768px]:ml-[0] max-[768px]:p-[5%] max-[768px]:rounded-[10px]">
+      <div className="bg-white flex flex-col w-[50%] p-[3%] rounded-[20px] ml-[3%] max-[768px]:w-[100%] max-[768px]:ml-[0] max-[768px]:p-[5%] max-[768px]:rounded-[10px]">
         <h1 className="font-semibold mt-[5%] mb-[3%] text-[#979797] text-[20px] ">
           Fill out our appointment form to get in touch with one of our experts
         </h1>
-        <input
-          className="border-[1px] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%]"
-          placeholder="Name"
-        />
-        <input
-          className="border-[1px] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%]"
-          placeholder="Phone Number"
-        />
-        <input
-          className="border-[1px] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%]"
-          placeholder="Email"
-        />
 
-        <form className="flex flex-wrap" action="/submit" method="post">
+        <form className="flex flex-wrap" ref={form} onSubmit={sendEmail}>
+          <input
+            className="border-[1px] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%] w-[100%]"
+            placeholder="Name"
+            name="from_name"
+          />
+          <input
+            className="border-[1px] w-[100%] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%]"
+            placeholder="Phone Number"
+            name="phone_number"
+          />
+          <input
+            className="border-[1px] w-[100%] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%]"
+            placeholder="Email"
+            name="email_address"
+          />
+
           <h1 className="font-semibold mt-[5%] mb-[3%] text-[#979797] text-[18px] ">
             Select Your Preferred Service / Services
           </h1>
@@ -54,7 +114,7 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="web_design"
+              value="In Home Support"
             />
             In-Home Support
           </label>
@@ -64,7 +124,7 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="graphic_design"
+              value="Social & Community Participation"
             />
             Social & Community Participation
           </label>
@@ -74,7 +134,7 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="content_writing"
+              value="Assistance with Travel and Transport"
             />
             Assistance with Travel and Transport
           </label>
@@ -84,7 +144,7 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="seo"
+              value="Development of life skills"
             />
             Development of life skills
           </label>
@@ -94,7 +154,7 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="social_media"
+              value="Allied Health"
             />
             Allied Health
           </label>
@@ -104,7 +164,7 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="app_development"
+              value="Youth Support"
             />
             Youth Support
           </label>
@@ -114,7 +174,7 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="video_production"
+              value="Accommodation Assistance"
             />
             Accommodation Assistance
           </label>
@@ -124,7 +184,7 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="video_production"
+              value="Nursing"
             />
             Nursing
           </label>
@@ -134,19 +194,23 @@ const Appointment = () => {
               className="mr-[1%]"
               type="checkbox"
               name="service[]"
-              value="video_production"
+              value="Cleaning Services"
             />
             Cleaning Services
           </label>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            className="border-[1px] h-[100px] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%] w-[100%]"
+          ></textarea>
+
+          <button
+            type="submit"
+            className="bg-[#E58A7B] w-[100%] rounded-[8px] py-[4%] my-[2%] text-[white]"
+          >
+            Submit
+          </button>
         </form>
-
-        <textarea className="border-[1px] h-[100px] p-[2%] rounded-[5px] border-[#D9D9D9] my-[2%]">
-          Your Message
-        </textarea>
-
-        <button className="bg-[#E58A7B] rounded-[8px] py-[4%] my-[2%] text-[white]">
-          Submit
-        </button>
       </div>
     </div>
   );

@@ -28,8 +28,8 @@ const HomeServices = () => {
         </div>
 
         <div className="flex flex-wrap justify-between max-[768px]:flex-col max-[768px]:flex-no-wrap">
-          <Link href="/services">
-            <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]">
+          <Link className="w-[100%] md:w-[48%]" href="/services">
+            <div className="my-[2%] pt-[2%] pl-[2%] h-[250px] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:h-[100%] max-[768px]:pt-[5%]">
               <div className="w-[10%] mr-[2%] max-[768px]:w-[15%]">
                 <Image src={serviceHome} width={35} />
               </div>
@@ -37,7 +37,7 @@ const HomeServices = () => {
                 <h1 className="text-[26px] font-bold max-[768px]:text-[18px]">
                   In-Home Support
                 </h1>
-                <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
+                <p className="w-[100%] text-[#777777] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
                   Our In-Home Support services are designed to empower
                   individuals with disabilities, fostering independence within
                   the comfort of their homes.
@@ -49,8 +49,8 @@ const HomeServices = () => {
             </div>
           </Link>
 
-          <Link href="/services">
-            <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]">
+          <Link className="w-[100%] md:w-[48%]" href="/services">
+            <div className="my-[2%] pt-[2%] pl-[2%] h-[240px] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%] max-[768px]:h-[100%]">
               <div className="w-[10%] mr-[2%] max-[768px]:w-[15%]">
                 <Image src={serviceCommunity} width={35} />
               </div>
@@ -58,7 +58,7 @@ const HomeServices = () => {
                 <h1 className="text-[26px] font-bold max-[768px]:text-[18px]">
                   Community Participation
                 </h1>
-                <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
+                <p className="w-[100%] text-[#777777] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
                   Engage, connect, and thrive through meaningful Community
                   Participation initiatives that celebrate diversity and
                   inclusivity.
@@ -70,8 +70,8 @@ const HomeServices = () => {
             </div>
           </Link>
 
-          <Link href="/services">
-            <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%]">
+          <Link className="w-[100%] md:w-[48%]" href="/services">
+            <div className="my-[2%] pt-[2%] pl-[2%] h-[240px] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%] max-[768px]:h-[100%]">
               <div className="w-[10%] mr-[2%] max-[768px]:w-[15%]">
                 <Image src={serviceWorld} width={35} />
               </div>
@@ -79,7 +79,7 @@ const HomeServices = () => {
                 <h1 className="text-[26px] font-bold max-[768px]:text-[18px]">
                   Assistance with Travel and Transport
                 </h1>
-                <p className="w-[100%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
+                <p className="w-[100%] leading-[40px] text-[#777777] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
                   Explore the world with confidence, knowing our Travel and
                   Transport assistance is here to support you every step of the
                   way.
@@ -91,8 +91,8 @@ const HomeServices = () => {
             </div>
           </Link>
 
-          <Link href="/services">
-            <div className="w-[48%] my-[2%] pt-[2%] pl-[2%] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%">
+          <Link className="w-[100%] md:w-[48%]" href="/services">
+            <div className="my-[2%] pt-[2%] pl-[2%] h-[240px] flex justify-between bg-white rounded-[10px] max-[768px]:w-[100%] max-[768px]:pt-[5%] max-[768px]:h-[100%]">
               <div className="w-[10%] mr-[2%] max-[768px]:w-[15%]">
                 <Image src={serviceHeart} width={35} />
               </div>
@@ -100,7 +100,7 @@ const HomeServices = () => {
                 <h1 className="text-[26px] font-bold max-[768px]:text-[20px]">
                   Allied Health
                 </h1>
-                <p className="w-[90%] leading-[40px] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
+                <p className="w-[90%] leading-[40px] text-[#777777] max-[768px]:text-[14px] max-[768px]:w-[100%] max-[768px]:leading-[25px]">
                   Elevate your well-being with our comprehensive Allied Health
                   services, where expertise meets personalized care.
                 </p>

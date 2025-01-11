@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import logoB from "../../../public/Assets/Svg/logoB.svg";
+import logoB from "../../../public/Assets/Svg/logoBlue.svg";
 import phone from "../../../public/Assets/Svg/phoneG.svg";
 import Link from "next/link";
 import menu from "../../../public/Assets/Svg/menu.svg";
@@ -44,10 +44,10 @@ const Header = () => {
               <div className="flex items-center w-[70%]">
                 <Image src={phone} width="100%" />
                 <a
-                  href="tel:0455733143"
-                  className="text-[#979797] text-[16px] ml-[3%]"
+                  href="tel:61416617927"
+                  className="text-[#979797] text-[16px] ml-[3%] max-[768px]:text-[13px]"
                 >
-                  0455 733 143
+                  614 1661 7927
                 </a>
               </div>
               <div>
@@ -101,7 +101,7 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        <div className="flex  px-[2%] py-[1%] items-center mt-[2%] bg-white mx-[8%] shadow-lg">
+        <div className="flex  px-[2%] py-[1%] items-center justify-between mt-[2%] bg-white mx-[8%] shadow-lg">
           <div className="flex items-center w-[45%]">
             <Link href="/" className="mr-[2%] text-[#979797] text-[14px]">
               Home
@@ -134,20 +134,22 @@ const Header = () => {
               Donations
             </Link>
           </div>
-          <div className="w-[15%]">
+
+          <div className="w-[10%] flex justify-center">
             <Image src={logoB} width="100%" />
           </div>
-          <div className="flex items-center justify-end w-[40%]">
+
+          <div className="flex items-center justify-end w-[45%]">
             <div className="flex items-center w-[30%]">
               <Image src={phone} width="100%" />
               <a
-                href="tel:0455733143"
+                href="tel:+61416617927"
                 className="text-[#979797] text-[16px] ml-[3%]"
               >
-                0455 733 143
+                +614 1661 7927
               </a>
             </div>
-            <div className="w-[40%]">
+            <div className="w-[150px]">
               <Link href="#section1">
                 <ScrollLink to="section1" smooth={true} duration={3000}>
                   <button className="bg-[#F42BD3] text-[#ffffff] px-[20%] py-[7%] rounded-[5px]">

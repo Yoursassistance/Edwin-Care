@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const WhyDonate = () => {
   return (
-    <div className="px-[15%] bg-[#F8F9FE] py-[4%] max-[768px]:px-[8%] max-[768px]:py-[8%]">
+    <div className="px-[15%] bg-[#F8F9FE] py-[4%] max-[768px]:px-[4%] max-[768px]:py-[8%]">
       <div>
         <div>
           <h1 className="text-[#6A00C6] text-[42px] font-semibold max-[768px]:text-[22px] w-[100%]">

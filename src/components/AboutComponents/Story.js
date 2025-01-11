@@ -13,7 +13,7 @@ import serviceAccomodate from "../../../public/Assets/Svg/serviceAccomodate.svg"
 import serviceYouth from "../../../public/Assets/Svg/serviceYouth.svg";
 const Story = () => {
   return (
-    <div className="px-[15%] bg-[#45CD81] py-[5%] max-[768px]:px-[8%]">
+    <div className="px-[15%] bg-[#45CD81] py-[5%] max-[768px]:px-[4%]">
       <div className="my-[3%]">
         <h1 className="text-[40px] font-bold text-[white] max-[768px]:text-[28px]">Our story</h1>
         <p className="text-[16px] text-[white] w-[70%] mt-[1%] max-[768px]:w-[100%] max-[768px]:leading-[40px]">

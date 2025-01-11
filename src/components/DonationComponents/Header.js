@@ -44,10 +44,10 @@ const Header = () => {
             <div className="flex items-center w-[70%]">
                 <Image src={phone} width="100%" />
                 <a
-                  href="tel:0455733143"
+                  href="tel:+61416617927"
                   className="text-[#979797] text-[16px] ml-[3%]"
                 >
-                  0455 733 143
+                  +614 1661 7927
                 </a>
               </div>
               <div>
@@ -134,20 +134,21 @@ const Header = () => {
               Donations
             </Link>
           </div>
-          <div className="w-[15%]">
+
+          <div className="w-[10%] flex justify-center">
             <Image src={logoB} width="100%" />
           </div>
-          <div className="flex items-center justify-end w-[40%]">
+          <div className="flex items-center justify-end w-[45%]">
             <div className="flex items-center w-[30%]">
               <Image src={phone} width="100%" />
               <a
-                href="tel:0455733143"
+                href="tel:+61416617927"
                 className="text-[#ffffff] text-[16px] ml-[3%]"
               >
-                0455 733 143
+                +614 166 17927
               </a>
             </div>
-            <div className="w-[40%]">
+            <div className="w-[150px]">
               <Link href="#section1">
                 <ScrollLink to="section1" smooth={true} duration={3000}>
                   <button className="bg-[#ffffff] text-[#000000] px-[20%] py-[7%] rounded-[5px]">
